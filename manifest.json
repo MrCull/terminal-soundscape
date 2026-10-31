@@ -1,0 +1,36 @@
+{
+  "schema_version": 1,
+  "assets": [
+    {
+      "id": "mobile-harbour-crane-candidate-01",
+      "title": "Mobile harbour crane operation (candidate; not auditioned)",
+      "category": "crane_movement",
+      "file": "assets/candidates/WWS_Mobileharbourcrane.ogg",
+      "source_url": "https://commons.wikimedia.org/wiki/File:WWS_Mobileharbourcrane.ogg",
+      "creator": "Teemu Ahola (recordist); Work With Sounds / Werstas (publisher)",
+      "license": "CC BY 4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_verified_on": "2026-10-31",
+      "attribution": "Teemu Ahola / Work With Sounds / Werstas, WWS Mobileharbourcrane.ogg, CC BY 4.0, https://commons.wikimedia.org/wiki/File:WWS_Mobileharbourcrane.ogg. Changes: downloaded from Wikimedia Commons; no audio processing.",
+      "commercial_use": "allowed",
+      "share_alike": false,
+      "authenticity": "authentic",
+      "authenticity_confidence": "high; source page identifies the mobile cargo handling crane as Gottwald HMK7408B at Port of Rauma",
+      "sample_rate_hz": 96000,
+      "channels": 2,
+      "duration_seconds": 48.548,
+      "playback": "full_event",
+      "event_guidance": "Candidate soundscape of mobile harbour crane operation; listen before selecting a segment or assigning a specific operation.",
+      "sha256": "34b4562f52d2d752be3e55845208e9d118146f7202a77853a04484630785b0a5",
+      "source_sha256": "34b4562f52d2d752be3e55845208e9d118146f7202a77853a04484630785b0a5",
+      "derivatives": [],
+      "processing": [],
+      "review": {
+        "status": "candidate_not_auditioned",
+        "listener": null,
+        "reviewed_on": null,
+        "outcome": "Not auditioned in this environment. Release readiness and loop points are unverified."
+      }
+    }
+  ]
+}
