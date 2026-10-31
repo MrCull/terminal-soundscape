@@ -135,6 +135,32 @@
       "derivatives": [],
       "processing": [],
       "review": {"status": "candidate_not_auditioned", "listener": null, "reviewed_on": null, "outcome": "Not auditioned; acoustic start signals and operation-specific suitability are unverified."}
+    },
+    {
+      "id": "container-reach-stacker-candidate-01",
+      "title": "Reach stackers loading and unloading trucks at Port of Rauma (candidate; not auditioned)",
+      "category": "carrier_movement",
+      "file": "assets/candidates/WWS_Containerreachstackers.ogg",
+      "source_url": "https://commons.wikimedia.org/wiki/File:WWS_Containerreachstackers.ogg",
+      "creator": "Teemu Ahola (recordist); Work With Sounds / Werstas (publisher)",
+      "license": "CC BY 4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_verified_on": "2026-10-31",
+      "attribution": "Teemu Ahola / Work With Sounds / Werstas, WWS Containerreachstackers.ogg, CC BY 4.0, https://commons.wikimedia.org/wiki/File:WWS_Containerreachstackers.ogg. Changes: downloaded from Wikimedia Commons; no audio processing.",
+      "commercial_use": "allowed",
+      "share_alike": false,
+      "authenticity": "authentic",
+      "authenticity_confidence": "high; source page identifies Kone Cranes SMV 4531 TB5 reach stackers at Port of Rauma",
+      "sample_rate_hz": 96000,
+      "channels": 2,
+      "duration_seconds": 91.091333,
+      "playback": "full_event",
+      "event_guidance": "Candidate reach stacker movement and truck loading/unloading recording; select operation segments after listening.",
+      "sha256": "340f76f67082b3a1ae3dd621709b104736a3b0cb9e166f49da63641293527081",
+      "source_sha256": "340f76f67082b3a1ae3dd621709b104736a3b0cb9e166f49da63641293527081",
+      "derivatives": [],
+      "processing": [],
+      "review": {"status": "candidate_not_auditioned", "listener": null, "reviewed_on": null, "outcome": "Not auditioned; operation segments, audio quality and loop points are unverified."}
     }
   ]
 }

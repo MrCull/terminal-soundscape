@@ -1,6 +1,6 @@
 # Collection status
 
-Checked 2026-10-31. Current audio inventory: 5 candidates, 0 release-ready assets, 0 browser-ready files. The audio files total 891.306 seconds (14m 51s) by `ffprobe`; none have been auditioned in this environment. One additional 187.462-second video candidate is tracked separately below.
+Checked 2026-10-31. Current audio inventory: 6 candidates, 0 release-ready assets, 0 browser-ready files. The audio files total 982.397 seconds (16m 22s) by `ffprobe`; none have been auditioned in this environment. One additional 187.462-second video candidate is tracked separately below.
 
 ## Candidate
 
@@ -14,6 +14,7 @@ Checked 2026-10-31. Current audio inventory: 5 candidates, 0 release-ready asset
 - `rotterdam-harbour-ambience-candidate-01`: Robin Koek's [Rotterdam harbour area recording](https://commons.wikimedia.org/wiki/File:Algemene_sfeer_van_het_havengebied_Rotterdam_-_SoundCloud_-_GvNL-Steim_Workshop.ogg), described as water, birds and distant harbour activity. 95.945 seconds, stereo Ogg at 44.1 kHz. CC BY 3.0. No loop claim is made.
 - `container-ship-arrival-candidate-01`: Klankbeeld / Beeld en Geluid's [container ship arrival recording](https://commons.wikimedia.org/wiki/File:Containerschip_meert_aan_in_haven_-_SoundCloud_-_Beeld_en_Geluid.ogg). 430.348 seconds, stereo Ogg at 48 kHz. CC BY-SA 3.0: redistribution is allowed, and adaptations must retain the same or a compatible licence. The source describes a ship arriving and crane unloading; details are unauditioned.
 - `dortmund-container-terminal-candidate-01`: Konrad Gutkowski and Jonathan Nicolai / Work With Sounds' [Port of Dortmund terminal recording](https://commons.wikimedia.org/wiki/File:WWS_ContainerTerminalatthePortofDortmund.ogg). The item page describes container transport by three gantry cranes and acoustic start signals, and documents CC BY 4.0 plus recorded permission. 189.595 seconds, stereo Ogg at 44.1 kHz. Candidate for terminal ambience, container handling and warning research; no narrower event is claimed without listening.
+- `container-reach-stacker-candidate-01`: Teemu Ahola / Work With Sounds / Werstas' [reach stackers at Port of Rauma](https://commons.wikimedia.org/wiki/File:WWS_Containerreachstackers.ogg). The item page identifies Kone Cranes SMV 4531 TB5 equipment loading/unloading trucks and documents CC BY 4.0 with recorded permission. 91.091 seconds, stereo Ogg at 96 kHz. It is directly relevant carrier movement, pending listening review.
 
 ## Video reference
 
@@ -27,7 +28,7 @@ All three files have source-page rights records, attribution and hashes in `mani
 | --- | --- | --- |
 | Crane hoist/movement | Two authentic rights-documented audio candidates; unauditioned | Human listening, identify useful event/segment, check quality and boundaries, process only if useful, review derivative |
 | Container contact/placement | Terminal field recordings contain handling as candidate soundscapes; no isolated contact event | Listen, identify whether usable contact/placement is present; otherwise source a distinct event |
-| Carrier/tractor movement | One authentic reach stacker video with audio; no extracted audio candidate | Listen to video audio; extract only useful real recording with logged conversion and review |
+| Carrier/tractor movement | One authentic reach stacker audio candidate and one supporting video; unauditioned | Listen; identify useful movement events; prepare reviewed browser formats |
 | Terminal warnings | One terminal soundscape source page describes acoustic crane start signals; recording unauditioned | Verify audible signal, research operating context, identify event and review |
 | Reefer ambience | No asset | Source and verify; listen; determine channel and honest loop guidance |
 | Harbour ambience | One rights-documented candidate; unauditioned | Listen; determine channel and honest loop guidance |
