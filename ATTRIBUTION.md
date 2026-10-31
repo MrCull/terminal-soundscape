@@ -93,6 +93,27 @@ Emptying steel scrap from a truck, Work With Sounds / Technical Museum of Sloven
 - Source: https://www.soundsofchanges.eu/sound/emptying-steel-scrap-from-a-truck/
 - Licence: CC-BY-4.0 (https://creativecommons.org/licenses/by/4.0/); commercial use: True; share alike: False
 
+## port-gdynia-lorries
+
+Lorries at Gdynia container-terminal entrance, Museum of Municipal Engineering, sound recordist Monika Widzicka, CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/); resampled to 48 kHz PCM WAV; https://www.soundsofchanges.eu/sound/gdynia-port-container-terminal-2/
+
+- Source: https://www.soundsofchanges.eu/sound/gdynia-port-container-terminal-2/
+- Licence: CC-BY-4.0 (https://creativecommons.org/licenses/by/4.0/); commercial use: True; share alike: False
+
+## port-gdansk-coal
+
+Coal transhipment machinery at Gdansk port, Museum of Municipal Engineering, sound recordist Monika Widzicka, CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/); resampled to 48 kHz PCM WAV; https://www.soundsofchanges.eu/sound/gdansk-port-coal-transhipment/
+
+- Source: https://www.soundsofchanges.eu/sound/gdansk-port-coal-transhipment/
+- Licence: CC-BY-4.0 (https://creativecommons.org/licenses/by/4.0/); commercial use: True; share alike: False
+
+## port-gdansk-scrap
+
+Scrap metal transhipment at Gdansk port, Museum of Municipal Engineering, sound recordist Monika Widzicka, CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/); resampled to 48 kHz PCM WAV; https://www.soundsofchanges.eu/sound/gdansk-port-scrap-metal-transhipment/
+
+- Source: https://www.soundsofchanges.eu/sound/gdansk-port-scrap-metal-transhipment/
+- Licence: CC-BY-4.0 (https://creativecommons.org/licenses/by/4.0/); commercial use: True; share alike: False
+
 ## crane-soc-waste-cabin
 
 The Thermal Waste Conversion Plant (3): crane cabin, Museum of Municipal Engineering, sound recordist Monika Widzicka, CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/); resampled to 48 kHz PCM; https://www.soundsofchanges.eu/sound/the-thermal-waste-conversion-plant-3-crane-cabin/

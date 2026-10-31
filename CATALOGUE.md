@@ -158,6 +158,42 @@ Steel scrap emptied from a truck at a steel plant; unreviewed industrial handlin
 - Playback: full-event — Candidate for playback once after listening and suitability review; no isolated impact has been identified. Do not loop without boundary review.
 - Review: pending — Listening unavailable; listen to original and assess suitability. Not release-ready; loop boundaries unreviewed.
 
+## port-gdynia-lorries
+
+Lorries at Gdynia container-terminal entrance; pending full-recording candidate.
+
+- File: audio/port-gdynia-lorries.wav
+- Licence: CC-BY-4.0 (https://creativecommons.org/licenses/by/4.0/); commercial use: True; share alike: False
+- Attribution: Lorries at Gdynia container-terminal entrance, Museum of Municipal Engineering, sound recordist Monika Widzicka, CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/); resampled to 48 kHz PCM WAV; https://www.soundsofchanges.eu/sound/gdynia-port-container-terminal-2/
+- Source: https://www.soundsofchanges.eu/sound/gdynia-port-container-terminal-2/
+- Authenticity: authentic
+- Playback: full-event — Pending listening and suitability review. Treat as a stereo environmental recording; do not assume isolated actions or loop without boundary review.
+- Review: pending — Listening unavailable. Original and master require listening and suitability review; not release-ready. Loop boundaries unreviewed.
+
+## port-gdansk-coal
+
+Coal transhipment machinery at Gdansk port; pending full-recording candidate.
+
+- File: audio/port-gdansk-coal.wav
+- Licence: CC-BY-4.0 (https://creativecommons.org/licenses/by/4.0/); commercial use: True; share alike: False
+- Attribution: Coal transhipment machinery at Gdansk port, Museum of Municipal Engineering, sound recordist Monika Widzicka, CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/); resampled to 48 kHz PCM WAV; https://www.soundsofchanges.eu/sound/gdansk-port-coal-transhipment/
+- Source: https://www.soundsofchanges.eu/sound/gdansk-port-coal-transhipment/
+- Authenticity: authentic
+- Playback: full-event — Pending listening and suitability review. Treat as a stereo environmental recording; do not assume isolated actions or loop without boundary review.
+- Review: pending — Listening unavailable. Original and master require listening and suitability review; not release-ready. Loop boundaries unreviewed.
+
+## port-gdansk-scrap
+
+Scrap metal transhipment at Gdansk port; pending full-recording candidate.
+
+- File: audio/port-gdansk-scrap.wav
+- Licence: CC-BY-4.0 (https://creativecommons.org/licenses/by/4.0/); commercial use: True; share alike: False
+- Attribution: Scrap metal transhipment at Gdansk port, Museum of Municipal Engineering, sound recordist Monika Widzicka, CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/); resampled to 48 kHz PCM WAV; https://www.soundsofchanges.eu/sound/gdansk-port-scrap-metal-transhipment/
+- Source: https://www.soundsofchanges.eu/sound/gdansk-port-scrap-metal-transhipment/
+- Authenticity: authentic
+- Playback: full-event — Pending listening and suitability review. Treat as a stereo environmental recording; do not assume isolated actions or loop without boundary review.
+- Review: pending — Listening unavailable. Original and master require listening and suitability review; not release-ready. Loop boundaries unreviewed.
+
 ## crane-soc-waste-cabin
 
 Waste transfer crane recorded inside its cabin in a Krakow incineration plant; unreviewed crane substitute.

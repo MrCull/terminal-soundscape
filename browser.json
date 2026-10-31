@@ -288,6 +288,72 @@
       "review_status": "pending"
     },
     {
+      "id": "port-gdynia-lorries",
+      "path": "audio/port-gdynia-lorries.wav",
+      "event": "terminal lorry soundscape candidate",
+      "playback": "full-event",
+      "playback_guidance": "Pending listening and suitability review. Treat as a stereo environmental recording; do not assume isolated actions or loop without boundary review.",
+      "audio": {
+        "sample_rate": 48000,
+        "channels": 2,
+        "bit_depth": 16,
+        "duration_seconds": 70.0768125,
+        "peak": 3209,
+        "clipped_samples": 0
+      },
+      "license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "attribution": "Lorries at Gdynia container-terminal entrance, Museum of Municipal Engineering, sound recordist Monika Widzicka, CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/); resampled to 48 kHz PCM WAV; https://www.soundsofchanges.eu/sound/gdynia-port-container-terminal-2/",
+      "commercial_use": true,
+      "share_alike": false,
+      "authenticity": "authentic",
+      "review_status": "pending"
+    },
+    {
+      "id": "port-gdansk-coal",
+      "path": "audio/port-gdansk-coal.wav",
+      "event": "bulk terminal machinery soundscape candidate",
+      "playback": "full-event",
+      "playback_guidance": "Pending listening and suitability review. Treat as a stereo environmental recording; do not assume isolated actions or loop without boundary review.",
+      "audio": {
+        "sample_rate": 48000,
+        "channels": 2,
+        "bit_depth": 16,
+        "duration_seconds": 66.9256875,
+        "peak": 7869,
+        "clipped_samples": 0
+      },
+      "license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "attribution": "Coal transhipment machinery at Gdansk port, Museum of Municipal Engineering, sound recordist Monika Widzicka, CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/); resampled to 48 kHz PCM WAV; https://www.soundsofchanges.eu/sound/gdansk-port-coal-transhipment/",
+      "commercial_use": true,
+      "share_alike": false,
+      "authenticity": "authentic",
+      "review_status": "pending"
+    },
+    {
+      "id": "port-gdansk-scrap",
+      "path": "audio/port-gdansk-scrap.wav",
+      "event": "scrap terminal soundscape candidate",
+      "playback": "full-event",
+      "playback_guidance": "Pending listening and suitability review. Treat as a stereo environmental recording; do not assume isolated actions or loop without boundary review.",
+      "audio": {
+        "sample_rate": 48000,
+        "channels": 2,
+        "bit_depth": 16,
+        "duration_seconds": 98.49295833333333,
+        "peak": 8040,
+        "clipped_samples": 0
+      },
+      "license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "attribution": "Scrap metal transhipment at Gdansk port, Museum of Municipal Engineering, sound recordist Monika Widzicka, CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/); resampled to 48 kHz PCM WAV; https://www.soundsofchanges.eu/sound/gdansk-port-scrap-metal-transhipment/",
+      "commercial_use": true,
+      "share_alike": false,
+      "authenticity": "authentic",
+      "review_status": "pending"
+    },
+    {
       "id": "crane-soc-waste-cabin",
       "path": "audio/crane-soc-waste-cabin.wav",
       "event": "waste crane cabin operation candidate",
