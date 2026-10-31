@@ -1,6 +1,6 @@
 ﻿# Terminal soundscape
 
-A collection of real-world sounds for terminal simulations. The current inventory is **empty**: no recordings are reviewed or release-ready. See [research](docs/research-crane.md) for the first candidate and the listening blocker. No licence applies to the collection as a whole; check each item's terms, particularly non-commercial and share-alike restrictions.
+A collection of real-world sounds for terminal simulations. The current inventory is **empty**: no recordings are reviewed or release-ready. See [crane research](docs/research-crane.md) and [warning research](docs/research-warnings.md) for candidates and blockers. No licence applies to the collection as a whole; check each item's terms, particularly non-commercial and share-alike restrictions.
 
 ## Setup and commands
 
