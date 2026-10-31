@@ -37,3 +37,39 @@ Ursus C 342 agricultural tractor driving; unreviewed candidate substitute for te
 - Authenticity: substitute
 - Playback: full-event — Candidate for playback once at a vehicle point source after listening review. Do not loop without boundary review.
 - Review: pending — Listening unavailable: original and master require listening and suitability review; not release-ready. Loop boundaries have not been reviewed.
+
+## harbour-wws-dortmund
+
+Inland container terminal soundscape at the Port of Dortmund.
+
+- File: audio/harbour-wws-dortmund.wav
+- Licence: CC-BY-4.0 (https://creativecommons.org/licenses/by/4.0/); commercial use: True; share alike: False
+- Attribution: WWS_ContainerTerminalatthePortofDortmund.ogg, Work With Sounds / Konrad Gutkowski; sound recordists Konrad Gutkowski and Jonathan Nicolai, CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/); converted to PCM, resampled and channel-converted where applicable; https://commons.wikimedia.org/wiki/File:WWS_ContainerTerminalatthePortofDortmund.ogg
+- Source: https://commons.wikimedia.org/wiki/File:WWS_ContainerTerminalatthePortofDortmund.ogg
+- Authenticity: authentic
+- Playback: full-event — Play as bounded environmental ambience after listening; not a verified seamless loop.
+- Review: pending — No listening available. Listen to original and master, assess suitability and any proposed loop boundary; not release-ready.
+
+## warning-wws-nixe-whistle
+
+Steam whistle of historic inland tug Nixe.
+
+- File: audio/warning-wws-nixe-whistle.wav
+- Licence: CC-BY-4.0 (https://creativecommons.org/licenses/by/4.0/); commercial use: True; share alike: False
+- Attribution: WWS_Steamwhistle.ogg, Work With Sounds / Konrad Gutkowski; sound recordists Konrad Gutkowski and Jonathan Nicolai, CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/); converted to PCM, resampled and channel-converted where applicable; https://commons.wikimedia.org/wiki/File:WWS_Steamwhistle.ogg
+- Source: https://commons.wikimedia.org/wiki/File:WWS_Steamwhistle.ogg
+- Authenticity: substitute
+- Playback: full-event — Candidate vessel signal only after listening; do not imply a modern crane or vehicle alarm or assign a specific signal sequence.
+- Review: pending — No listening available. Listen to original and master, assess suitability and any proposed loop boundary; not release-ready.
+
+## ship-wws-soldek-telegraph
+
+Engine order telegraph on museum cargo ship Soldek.
+
+- File: audio/ship-wws-soldek-telegraph.wav
+- Licence: CC-BY-4.0 (https://creativecommons.org/licenses/by/4.0/); commercial use: True; share alike: False
+- Attribution: WWS_ShipSodekengineordertelegraph.ogg, Work With Sounds / Museum of Municipal Engineering; sound recordist Monika Widzicka, CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/); converted to PCM, resampled and channel-converted where applicable; https://commons.wikimedia.org/wiki/File:WWS_ShipSodekengineordertelegraph.ogg
+- Source: https://commons.wikimedia.org/wiki/File:WWS_ShipSodekengineordertelegraph.ogg
+- Authenticity: authentic
+- Playback: full-event — Play once at the ship machinery after listening; do not treat as a terminal warning or loop.
+- Review: pending — No listening available. Listen to original and master, assess suitability and any proposed loop boundary; not release-ready.

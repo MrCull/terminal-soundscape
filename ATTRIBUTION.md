@@ -22,3 +22,24 @@ WWS TractorUrsusC342driving, Work With Sounds / Museum of Municipal Engineering,
 
 - Source: https://commons.wikimedia.org/wiki/File:WWS_TractorUrsusC342driving.ogg
 - Licence: CC-BY-4.0 (https://creativecommons.org/licenses/by/4.0/); commercial use: True; share alike: False
+
+## harbour-wws-dortmund
+
+WWS_ContainerTerminalatthePortofDortmund.ogg, Work With Sounds / Konrad Gutkowski; sound recordists Konrad Gutkowski and Jonathan Nicolai, CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/); converted to PCM, resampled and channel-converted where applicable; https://commons.wikimedia.org/wiki/File:WWS_ContainerTerminalatthePortofDortmund.ogg
+
+- Source: https://commons.wikimedia.org/wiki/File:WWS_ContainerTerminalatthePortofDortmund.ogg
+- Licence: CC-BY-4.0 (https://creativecommons.org/licenses/by/4.0/); commercial use: True; share alike: False
+
+## warning-wws-nixe-whistle
+
+WWS_Steamwhistle.ogg, Work With Sounds / Konrad Gutkowski; sound recordists Konrad Gutkowski and Jonathan Nicolai, CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/); converted to PCM, resampled and channel-converted where applicable; https://commons.wikimedia.org/wiki/File:WWS_Steamwhistle.ogg
+
+- Source: https://commons.wikimedia.org/wiki/File:WWS_Steamwhistle.ogg
+- Licence: CC-BY-4.0 (https://creativecommons.org/licenses/by/4.0/); commercial use: True; share alike: False
+
+## ship-wws-soldek-telegraph
+
+WWS_ShipSodekengineordertelegraph.ogg, Work With Sounds / Museum of Municipal Engineering; sound recordist Monika Widzicka, CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/); converted to PCM, resampled and channel-converted where applicable; https://commons.wikimedia.org/wiki/File:WWS_ShipSodekengineordertelegraph.ogg
+
+- Source: https://commons.wikimedia.org/wiki/File:WWS_ShipSodekengineordertelegraph.ogg
+- Licence: CC-BY-4.0 (https://creativecommons.org/licenses/by/4.0/); commercial use: True; share alike: False

@@ -66,6 +66,72 @@
       "share_alike": false,
       "authenticity": "substitute",
       "review_status": "pending"
+    },
+    {
+      "id": "harbour-wws-dortmund",
+      "path": "audio/harbour-wws-dortmund.wav",
+      "event": "container terminal soundscape",
+      "playback": "full-event",
+      "playback_guidance": "Play as bounded environmental ambience after listening; not a verified seamless loop.",
+      "audio": {
+        "sample_rate": 48000,
+        "channels": 2,
+        "bit_depth": 16,
+        "duration_seconds": 189.59529166666667,
+        "peak": 19547,
+        "clipped_samples": 0
+      },
+      "license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "attribution": "WWS_ContainerTerminalatthePortofDortmund.ogg, Work With Sounds / Konrad Gutkowski; sound recordists Konrad Gutkowski and Jonathan Nicolai, CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/); converted to PCM, resampled and channel-converted where applicable; https://commons.wikimedia.org/wiki/File:WWS_ContainerTerminalatthePortofDortmund.ogg",
+      "commercial_use": true,
+      "share_alike": false,
+      "authenticity": "authentic",
+      "review_status": "pending"
+    },
+    {
+      "id": "warning-wws-nixe-whistle",
+      "path": "audio/warning-wws-nixe-whistle.wav",
+      "event": "historic vessel whistle",
+      "playback": "full-event",
+      "playback_guidance": "Candidate vessel signal only after listening; do not imply a modern crane or vehicle alarm or assign a specific signal sequence.",
+      "audio": {
+        "sample_rate": 48000,
+        "channels": 1,
+        "bit_depth": 16,
+        "duration_seconds": 10.475104166666666,
+        "peak": 7243,
+        "clipped_samples": 0
+      },
+      "license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "attribution": "WWS_Steamwhistle.ogg, Work With Sounds / Konrad Gutkowski; sound recordists Konrad Gutkowski and Jonathan Nicolai, CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/); converted to PCM, resampled and channel-converted where applicable; https://commons.wikimedia.org/wiki/File:WWS_Steamwhistle.ogg",
+      "commercial_use": true,
+      "share_alike": false,
+      "authenticity": "substitute",
+      "review_status": "pending"
+    },
+    {
+      "id": "ship-wws-soldek-telegraph",
+      "path": "audio/ship-wws-soldek-telegraph.wav",
+      "event": "ship engine order telegraph",
+      "playback": "full-event",
+      "playback_guidance": "Play once at the ship machinery after listening; do not treat as a terminal warning or loop.",
+      "audio": {
+        "sample_rate": 48000,
+        "channels": 1,
+        "bit_depth": 16,
+        "duration_seconds": 26.8451875,
+        "peak": 21381,
+        "clipped_samples": 0
+      },
+      "license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "attribution": "WWS_ShipSodekengineordertelegraph.ogg, Work With Sounds / Museum of Municipal Engineering; sound recordist Monika Widzicka, CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/); converted to PCM, resampled and channel-converted where applicable; https://commons.wikimedia.org/wiki/File:WWS_ShipSodekengineordertelegraph.ogg",
+      "commercial_use": true,
+      "share_alike": false,
+      "authenticity": "authentic",
+      "review_status": "pending"
     }
   ]
 }
