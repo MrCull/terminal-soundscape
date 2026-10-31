@@ -20,7 +20,7 @@ Checked 2026-10-31. Current audio inventory: 6 candidates, 0 release-ready asset
 
 `assets/candidates/videos/Container_reach_stacker_Port_of_Rauma.webm` is a 187.462-second 1080p WebM clip showing a Kone Cranes SMV 4531 TB5 reach stacker loading/unloading trucks at Port of Rauma. It contains stereo Vorbis audio at 44.1 kHz. The [Commons page](https://commons.wikimedia.org/wiki/File:Container_reach_stacker,_Port_of_Rauma.webm) identifies Work With Sounds, sound recordist Teemu Ahola and video recordist Leena Ahonen, and verifies CC BY 3.0. File SHA-256: `291bc79eb9f08b0ca509e12e2be3ced09d619d6ac5ad96a35ccb4d6e5c1f3050`. This is an actual video source, not a browser-ready audio asset; no audio extraction, use, or listening review is claimed.
 
-All three files have source-page rights records, attribution and hashes in `manifest.json`. Their commercial-use status is allowed under the listed licences; one carries share-alike obligations. They remain candidates pending actual listening review.
+All six audio files have source-page rights records, attribution and hashes in `manifest.json`. Their commercial-use status is allowed under the listed licences; one carries share-alike obligations. They remain candidates pending actual listening review.
 
 ## Coverage and remaining work
 
@@ -34,4 +34,4 @@ All three files have source-page rights records, attribution and hashes in `mani
 | Harbour ambience | One rights-documented candidate; unauditioned | Listen; determine channel and honest loop guidance |
 | Browser delivery | Not implemented | Validate actual inventory, produce browser-compatible derivatives and event mappings, rights/coverage reports and integration guidance |
 
-No source or listening blockers are fabricated for categories without candidates: these are sourcing tasks, not completed searches. Current counts, duration and licensing status refer only to the single candidate and should not be interpreted as coverage achieved.
+No source or listening blockers are fabricated for categories without candidates. Counts and duration refer to all six audio candidates above; they must not be interpreted as release-ready coverage achieved. Licence statuses are per item as recorded in `manifest.json`, including the share-alike obligation on the container-ship arrival recording.

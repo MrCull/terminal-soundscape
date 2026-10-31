@@ -30,7 +30,8 @@
         "listener": null,
         "reviewed_on": null,
         "outcome": "Not auditioned in this environment. Release readiness and loop points are unverified."
-      }
+      },
+      "quality_notes": "Not auditioned; acoustic quality, clipping by listening, and loop suitability are unknown."
     },
     {
       "id": "container-gantry-crane-candidate-01",
@@ -56,7 +57,13 @@
       "source_sha256": "4fe65a241f63091b6e7b7757b3feaf2e6df1b8eece18e9b57031d97e15aa5ff3",
       "derivatives": [],
       "processing": [],
-      "review": {"status": "candidate_not_auditioned", "listener": null, "reviewed_on": null, "outcome": "Not auditioned; useful events, audio quality and loop points are unverified."}
+      "review": {
+        "status": "candidate_not_auditioned",
+        "listener": null,
+        "reviewed_on": null,
+        "outcome": "Not auditioned; useful events, audio quality and loop points are unverified."
+      },
+      "quality_notes": "Not auditioned; acoustic quality, clipping by listening, and loop suitability are unknown."
     },
     {
       "id": "rotterdam-harbour-ambience-candidate-01",
@@ -82,7 +89,13 @@
       "source_sha256": "6bba629b8aa4b2c9a8a3b34dd7e9a1ee6a5e6c18f2d88eda08739cc25eacee01",
       "derivatives": [],
       "processing": [],
-      "review": {"status": "candidate_not_auditioned", "listener": null, "reviewed_on": null, "outcome": "Not auditioned; loop boundaries and suitability as a bed are unverified."}
+      "review": {
+        "status": "candidate_not_auditioned",
+        "listener": null,
+        "reviewed_on": null,
+        "outcome": "Not auditioned; loop boundaries and suitability as a bed are unverified."
+      },
+      "quality_notes": "Not auditioned; acoustic quality, clipping by listening, and loop suitability are unknown."
     },
     {
       "id": "container-ship-arrival-candidate-01",
@@ -108,7 +121,13 @@
       "source_sha256": "bab2fba773d38d04501992b76caaa2d855f129723b47992bde9e55cb581935e9",
       "derivatives": [],
       "processing": [],
-      "review": {"status": "candidate_not_auditioned", "listener": null, "reviewed_on": null, "outcome": "Not auditioned; event content, loop points and suitability are unverified."}
+      "review": {
+        "status": "candidate_not_auditioned",
+        "listener": null,
+        "reviewed_on": null,
+        "outcome": "Not auditioned; event content, loop points and suitability are unverified."
+      },
+      "quality_notes": "Not auditioned; acoustic quality, clipping by listening, and loop suitability are unknown."
     },
     {
       "id": "dortmund-container-terminal-candidate-01",
@@ -134,7 +153,13 @@
       "source_sha256": "e53c4509e8b7a452884fdfecb373f420811b1877053cbcb9460fe8aff6d60d84",
       "derivatives": [],
       "processing": [],
-      "review": {"status": "candidate_not_auditioned", "listener": null, "reviewed_on": null, "outcome": "Not auditioned; acoustic start signals and operation-specific suitability are unverified."}
+      "review": {
+        "status": "candidate_not_auditioned",
+        "listener": null,
+        "reviewed_on": null,
+        "outcome": "Not auditioned; acoustic start signals and operation-specific suitability are unverified."
+      },
+      "quality_notes": "Not auditioned; acoustic quality, clipping by listening, and loop suitability are unknown."
     },
     {
       "id": "container-reach-stacker-candidate-01",
@@ -160,7 +185,13 @@
       "source_sha256": "340f76f67082b3a1ae3dd621709b104736a3b0cb9e166f49da63641293527081",
       "derivatives": [],
       "processing": [],
-      "review": {"status": "candidate_not_auditioned", "listener": null, "reviewed_on": null, "outcome": "Not auditioned; operation segments, audio quality and loop points are unverified."}
+      "review": {
+        "status": "candidate_not_auditioned",
+        "listener": null,
+        "reviewed_on": null,
+        "outcome": "Not auditioned; operation segments, audio quality and loop points are unverified."
+      },
+      "quality_notes": "Not auditioned; acoustic quality, clipping by listening, and loop suitability are unknown."
     }
   ]
 }

@@ -2,6 +2,7 @@
 import hashlib
 import json
 import math
+import re
 import wave
 import shutil
 import subprocess
@@ -75,8 +76,8 @@ def validate(manifest_path: Path) -> list[str]:
     seen: set[str] = set()
     for i, asset in enumerate(data["assets"]):
         prefix = f"assets[{i}]"
-        for key in ("id", "title", "category", "file", "source_url", "creator", "license", "license_url", "license_verified_on", "attribution", "commercial_use", "authenticity", "playback", "review"):
-            if not asset.get(key):
+        for key in ("id", "title", "category", "file", "source_url", "source_sha256", "creator", "license", "license_url", "license_verified_on", "attribution", "commercial_use", "authenticity", "authenticity_confidence", "quality_notes", "playback", "event_guidance", "processing", "review"):
+            if key not in asset or asset[key] is None or asset[key] == "":
                 errors.append(f"{prefix}: missing {key}")
         asset_id = asset.get("id")
         if asset_id in seen:
@@ -90,6 +91,12 @@ def validate(manifest_path: Path) -> list[str]:
             digest = hashlib.sha256(media.read_bytes()).hexdigest()
             if asset.get("sha256") != digest:
                 errors.append(f"{prefix}: sha256 mismatch")
+            if not re.fullmatch(r"[0-9a-f]{64}", asset.get("source_sha256", "")):
+                errors.append(f"{prefix}: source_sha256 must be a 64-character lowercase SHA-256")
+            if not re.fullmatch(r"[0-9a-f]{64}", asset.get("sha256", "")):
+                errors.append(f"{prefix}: sha256 must be a 64-character lowercase SHA-256")
+            if asset.get("processing") == [] and asset.get("source_sha256") != digest:
+                errors.append(f"{prefix}: unprocessed source_sha256 must match file sha256")
             if media.suffix.lower() == ".wav":
                 with wave.open(str(media), "rb") as wav:
                     frames, rate, channels, width = wav.getnframes(), wav.getframerate(), wav.getnchannels(), wav.getsampwidth()
@@ -106,12 +113,19 @@ def validate(manifest_path: Path) -> list[str]:
         if asset.get("commercial_use") not in ("allowed", "not_allowed", "unknown"):
             errors.append(f"{prefix}: commercial_use must be allowed, not_allowed, or unknown")
         if asset.get("review", {}).get("status") == "release_ready":
-            if not asset.get("review", {}).get("listener") or not asset.get("review", {}).get("reviewed_on"):
-                errors.append(f"{prefix}: release_ready requires a named listener and review date")
+            review = asset.get("review", {})
+            if not review.get("listener") or not review.get("reviewed_on") or not review.get("outcome"):
+                errors.append(f"{prefix}: release_ready requires a named listener, review date, and outcome")
+            if review.get("loop_boundary_review") not in ("reviewed", "not_applicable"):
+                errors.append(f"{prefix}: release_ready requires loop-boundary review or not_applicable")
             if asset.get("commercial_use") == "unknown" or not asset.get("license_verified_on"):
                 errors.append(f"{prefix}: release_ready requires verified item-level rights")
+            if not asset.get("source_sha256") or not asset.get("authenticity_confidence") or not asset.get("quality_notes"):
+                errors.append(f"{prefix}: release_ready requires source hash, authenticity confidence, and quality notes")
         if not isinstance(asset.get("share_alike"), bool):
             errors.append(f"{prefix}: share_alike must explicitly be true or false")
+        if not isinstance(asset.get("processing"), list):
+            errors.append(f"{prefix}: processing must be an array")
     return errors
 
 

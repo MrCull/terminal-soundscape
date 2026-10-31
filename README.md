@@ -1,6 +1,6 @@
 # Terminal Soundscape
 
-An independently usable, traceable collection of real terminal and port audio for browser simulations. The inventory currently contains five unauditioned audio candidates and one video reference. There are no release-ready or browser-ready files yet.
+An independently usable, traceable collection of real terminal and port audio for browser simulations. The inventory currently contains six unauditioned audio candidates and one video reference. There are no release-ready or browser-ready files yet.
 
 ## Maintainer commands
 

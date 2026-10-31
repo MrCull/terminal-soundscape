@@ -28,9 +28,10 @@ class CollectionCommandsTest(unittest.TestCase):
             asset = {
                 "id": "crane-01", "title": "Crane", "category": "crane", "file": "asset.wav",
                 "source_url": "https://example.test", "creator": "Example", "license": "CC0",
+                "source_sha256": hashlib.sha256(audio.read_bytes()).hexdigest(), "authenticity_confidence": "verified fixture", "quality_notes": "fixture", "event_guidance": "test", "processing": [],
                 "attribution": "Example", "commercial_use": "allowed", "authenticity": "authentic",
                 "license_url": "https://creativecommons.org/publicdomain/zero/1.0/", "license_verified_on": "2026-10-31", "share_alike": False,
-                "playback": "one_shot", "review": {"status": "not_reviewed"},
+                "playback": "one_shot", "processing": [], "quality_notes": "fixture", "authenticity_confidence": "verified fixture", "event_guidance": "test", "source_sha256": hashlib.sha256(audio.read_bytes()).hexdigest(), "review": {"status": "not_reviewed"},
                 "sha256": hashlib.sha256(audio.read_bytes()).hexdigest(), "sample_rate_hz": 48000,
                 "channels": 1, "duration_seconds": 0.01
             }
@@ -58,6 +59,7 @@ class CollectionCommandsTest(unittest.TestCase):
             asset = {
                 "id": "crane-01", "title": "Crane", "category": "crane", "file": "asset.wav",
                 "source_url": "https://example.test", "creator": "Example", "license": "unknown",
+                "source_sha256": hashlib.sha256(audio.read_bytes()).hexdigest(), "authenticity_confidence": "unknown", "quality_notes": "not reviewed", "event_guidance": "test", "processing": [],
                 "license_url": "unknown", "license_verified_on": None, "attribution": "Example",
                 "commercial_use": "unknown", "share_alike": False, "authenticity": "authentic", "playback": "one_shot",
                 "sha256": hashlib.sha256(audio.read_bytes()).hexdigest(), "review": {"status": "release_ready", "listener": None}
@@ -66,6 +68,7 @@ class CollectionCommandsTest(unittest.TestCase):
             manifest.write_text(json.dumps({"schema_version": 1, "assets": [asset]}), encoding="utf-8")
             errors = validate(manifest)
             self.assertTrue(any("named listener" in error for error in errors))
+            self.assertTrue(any("loop-boundary review" in error for error in errors))
             self.assertTrue(any("verified item-level rights" in error for error in errors))
 
     def test_catalogue_makes_share_alike_visible(self):
