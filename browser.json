@@ -1,4 +1,27 @@
 {
   "version": 1,
-  "assets": []
+  "assets": [
+    {
+      "id": "crane-wws-bridge",
+      "path": "audio/crane-wws-bridge.wav",
+      "event": "crane movement candidate",
+      "playback": "full-event",
+      "playback_guidance": "Candidate for playback once at a crane point source after listening review; do not loop without boundary review.",
+      "audio": {
+        "sample_rate": 48000,
+        "channels": 1,
+        "bit_depth": 16,
+        "duration_seconds": 63.996,
+        "peak": 25719,
+        "clipped_samples": 0
+      },
+      "license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "attribution": "WWS Crane, Work With Sounds / Technical Museum of Slovenia, sound recordist Dušan Oblak, CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/); converted from Ogg Vorbis to PCM WAV; source https://commons.wikimedia.org/wiki/File:WWS_Crane.ogg",
+      "commercial_use": true,
+      "share_alike": false,
+      "authenticity": "substitute",
+      "review_status": "pending"
+    }
+  ]
 }

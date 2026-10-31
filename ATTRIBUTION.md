@@ -2,4 +2,9 @@
 
 Check each licence before distribution. Non-commercial and share-alike restrictions apply where marked.
 
-No recordings are currently in the collection.
+## crane-wws-bridge
+
+WWS Crane, Work With Sounds / Technical Museum of Slovenia, sound recordist Dušan Oblak, CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/); converted from Ogg Vorbis to PCM WAV; source https://commons.wikimedia.org/wiki/File:WWS_Crane.ogg
+
+- Source: https://commons.wikimedia.org/wiki/File:WWS_Crane.ogg
+- Licence: CC-BY-4.0 (https://creativecommons.org/licenses/by/4.0/); commercial use: True; share alike: False
