@@ -1,0 +1,85 @@
+{
+  "schema_version": 1,
+  "status": "candidate_inventory_only",
+  "note": "No reviewed browser-ready clips exist. These entries are source candidates, not validated event mappings.",
+  "assets": [
+    {
+      "asset_id": "mobile-harbour-crane-candidate-01",
+      "category": "crane_movement",
+      "source_file": "assets/candidates/WWS_Mobileharbourcrane.ogg",
+      "preview_file": "assets/browser-candidates/mobile-harbour-crane-candidate-01.mp3",
+      "browser_compatible_preview": true,
+      "browser_ready": false,
+      "event_mapping": null,
+      "license": "CC BY 4.0",
+      "commercial_use": "allowed",
+      "share_alike": false,
+      "review_status": "candidate_not_auditioned"
+    },
+    {
+      "asset_id": "container-gantry-crane-candidate-01",
+      "category": "crane_movement",
+      "source_file": "assets/candidates/WWS_Containershipgantrycrane.ogg",
+      "preview_file": "assets/browser-candidates/container-gantry-crane-candidate-01.mp3",
+      "browser_compatible_preview": true,
+      "browser_ready": false,
+      "event_mapping": null,
+      "license": "CC BY 4.0",
+      "commercial_use": "allowed",
+      "share_alike": false,
+      "review_status": "candidate_not_auditioned"
+    },
+    {
+      "asset_id": "rotterdam-harbour-ambience-candidate-01",
+      "category": "harbour_ambience",
+      "source_file": "assets/candidates/Rotterdam_harbour_area_ambience.ogg",
+      "preview_file": "assets/browser-candidates/rotterdam-harbour-ambience-candidate-01.mp3",
+      "browser_compatible_preview": true,
+      "browser_ready": false,
+      "event_mapping": null,
+      "license": "CC BY 3.0",
+      "commercial_use": "allowed",
+      "share_alike": false,
+      "review_status": "candidate_not_auditioned"
+    },
+    {
+      "asset_id": "container-ship-arrival-candidate-01",
+      "category": "ship_and_harbour_event",
+      "source_file": "assets/candidates/Container_ship_arrival_harbour.ogg",
+      "preview_file": "assets/browser-candidates/container-ship-arrival-candidate-01.mp3",
+      "browser_compatible_preview": true,
+      "browser_ready": false,
+      "event_mapping": null,
+      "license": "CC BY-SA 3.0",
+      "commercial_use": "allowed",
+      "share_alike": true,
+      "review_status": "candidate_not_auditioned"
+    },
+    {
+      "asset_id": "dortmund-container-terminal-candidate-01",
+      "category": "terminal_warning_candidate",
+      "source_file": "assets/candidates/WWS_ContainerTerminalatthePortofDortmund.ogg",
+      "preview_file": "assets/browser-candidates/dortmund-container-terminal-candidate-01.mp3",
+      "browser_compatible_preview": true,
+      "browser_ready": false,
+      "event_mapping": null,
+      "license": "CC BY 4.0",
+      "commercial_use": "allowed",
+      "share_alike": false,
+      "review_status": "candidate_not_auditioned"
+    },
+    {
+      "asset_id": "container-reach-stacker-candidate-01",
+      "category": "carrier_movement",
+      "source_file": "assets/candidates/WWS_Containerreachstackers.ogg",
+      "preview_file": "assets/browser-candidates/container-reach-stacker-candidate-01.mp3",
+      "browser_compatible_preview": true,
+      "browser_ready": false,
+      "event_mapping": null,
+      "license": "CC BY 4.0",
+      "commercial_use": "allowed",
+      "share_alike": false,
+      "review_status": "candidate_not_auditioned"
+    }
+  ]
+}

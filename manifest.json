@@ -23,7 +23,15 @@
       "event_guidance": "Candidate soundscape of mobile harbour crane operation; listen before selecting a segment or assigning a specific operation.",
       "sha256": "34b4562f52d2d752be3e55845208e9d118146f7202a77853a04484630785b0a5",
       "source_sha256": "34b4562f52d2d752be3e55845208e9d118146f7202a77853a04484630785b0a5",
-      "derivatives": [],
+      "derivatives": [
+        {
+          "file": "assets/browser-candidates/mobile-harbour-crane-candidate-01.mp3",
+          "sha256": "012a3586587715df0e6ab09901e14c53350275a906d5719c332660955484976a",
+          "format": "MP3",
+          "processing": "FFmpeg libmp3lame, 192 kbit/s CBR; metadata stripped; no normalization or fades.",
+          "review_status": "preview_not_auditioned"
+        }
+      ],
       "processing": [],
       "review": {
         "status": "candidate_not_auditioned",
@@ -31,7 +39,11 @@
         "reviewed_on": null,
         "outcome": "Not auditioned in this environment. Release readiness and loop points are unverified."
       },
-      "quality_notes": "Not auditioned; acoustic quality, clipping by listening, and loop suitability are unknown."
+      "quality_notes": "Not auditioned; acoustic quality, clipping by listening, and loop suitability are unknown.",
+      "source_downloaded_on": "2026-10-31",
+      "codec": "Ogg Vorbis",
+      "bit_depth": "not applicable (lossy compressed audio)",
+      "file_size_bytes": 687497
     },
     {
       "id": "container-gantry-crane-candidate-01",
@@ -55,7 +67,15 @@
       "event_guidance": "Long-form gantry crane loading soundscape; select an event only after listening.",
       "sha256": "4fe65a241f63091b6e7b7757b3feaf2e6df1b8eece18e9b57031d97e15aa5ff3",
       "source_sha256": "4fe65a241f63091b6e7b7757b3feaf2e6df1b8eece18e9b57031d97e15aa5ff3",
-      "derivatives": [],
+      "derivatives": [
+        {
+          "file": "assets/browser-candidates/container-gantry-crane-candidate-01.mp3",
+          "sha256": "191b76a399a559b48e4eb6b185f1390406abb16cbbdeb8bff389257c636d02d8",
+          "format": "MP3",
+          "processing": "FFmpeg libmp3lame, 192 kbit/s CBR; metadata stripped; no normalization or fades.",
+          "review_status": "preview_not_auditioned"
+        }
+      ],
       "processing": [],
       "review": {
         "status": "candidate_not_auditioned",
@@ -63,7 +83,11 @@
         "reviewed_on": null,
         "outcome": "Not auditioned; useful events, audio quality and loop points are unverified."
       },
-      "quality_notes": "Not auditioned; acoustic quality, clipping by listening, and loop suitability are unknown."
+      "quality_notes": "Not auditioned; acoustic quality, clipping by listening, and loop suitability are unknown.",
+      "source_downloaded_on": "2026-10-31",
+      "codec": "Ogg Vorbis",
+      "bit_depth": "not applicable (lossy compressed audio)",
+      "file_size_bytes": 1786051
     },
     {
       "id": "rotterdam-harbour-ambience-candidate-01",
@@ -87,7 +111,15 @@
       "event_guidance": "Potential stereo ambience bed; continuous-loop suitability and audible content must be checked by listening.",
       "sha256": "6bba629b8aa4b2c9a8a3b34dd7e9a1ee6a5e6c18f2d88eda08739cc25eacee01",
       "source_sha256": "6bba629b8aa4b2c9a8a3b34dd7e9a1ee6a5e6c18f2d88eda08739cc25eacee01",
-      "derivatives": [],
+      "derivatives": [
+        {
+          "file": "assets/browser-candidates/rotterdam-harbour-ambience-candidate-01.mp3",
+          "sha256": "8661ffe7ee1d4a17104364912db98184542cc6359aba014e5793316921c0684d",
+          "format": "MP3",
+          "processing": "FFmpeg libmp3lame, 192 kbit/s CBR; metadata stripped; no normalization or fades.",
+          "review_status": "preview_not_auditioned"
+        }
+      ],
       "processing": [],
       "review": {
         "status": "candidate_not_auditioned",
@@ -95,7 +127,11 @@
         "reviewed_on": null,
         "outcome": "Not auditioned; loop boundaries and suitability as a bed are unverified."
       },
-      "quality_notes": "Not auditioned; acoustic quality, clipping by listening, and loop suitability are unknown."
+      "quality_notes": "Not auditioned; acoustic quality, clipping by listening, and loop suitability are unknown.",
+      "source_downloaded_on": "2026-10-31",
+      "codec": "Ogg Vorbis",
+      "bit_depth": "not applicable (lossy compressed audio)",
+      "file_size_bytes": 5290749
     },
     {
       "id": "container-ship-arrival-candidate-01",
@@ -119,7 +155,15 @@
       "event_guidance": "Long-form ship arrival and harbour soundscape. Share-alike applies to adaptations; no loop or event edit is prepared.",
       "sha256": "bab2fba773d38d04501992b76caaa2d855f129723b47992bde9e55cb581935e9",
       "source_sha256": "bab2fba773d38d04501992b76caaa2d855f129723b47992bde9e55cb581935e9",
-      "derivatives": [],
+      "derivatives": [
+        {
+          "file": "assets/browser-candidates/container-ship-arrival-candidate-01.mp3",
+          "sha256": "d844c6b11e92d1694d7292ce9b4ebf2bd4bd0d9b481310d1e57762cafe7f29a6",
+          "format": "MP3",
+          "processing": "FFmpeg libmp3lame, 192 kbit/s CBR; metadata stripped; no normalization or fades.",
+          "review_status": "preview_not_auditioned"
+        }
+      ],
       "processing": [],
       "review": {
         "status": "candidate_not_auditioned",
@@ -127,12 +171,16 @@
         "reviewed_on": null,
         "outcome": "Not auditioned; event content, loop points and suitability are unverified."
       },
-      "quality_notes": "Not auditioned; acoustic quality, clipping by listening, and loop suitability are unknown."
+      "quality_notes": "Not auditioned; acoustic quality, clipping by listening, and loop suitability are unknown.",
+      "source_downloaded_on": "2026-10-31",
+      "codec": "Ogg Vorbis",
+      "bit_depth": "not applicable (lossy compressed audio)",
+      "file_size_bytes": 22736850
     },
     {
       "id": "dortmund-container-terminal-candidate-01",
       "title": "Port of Dortmund container terminal with crane start signals (candidate; not auditioned)",
-      "category": "container_terminal_ambience_and_warning_candidate",
+      "category": "terminal_warning_candidate",
       "file": "assets/candidates/WWS_ContainerTerminalatthePortofDortmund.ogg",
       "source_url": "https://commons.wikimedia.org/wiki/File:WWS_ContainerTerminalatthePortofDortmund.ogg",
       "creator": "Konrad Gutkowski and Jonathan Nicolai (recordists); Work With Sounds (publisher)",
@@ -151,7 +199,15 @@
       "event_guidance": "Candidate field recording with container handling and crane start signals; the actual events and alarm appropriateness must be confirmed by listening and research.",
       "sha256": "e53c4509e8b7a452884fdfecb373f420811b1877053cbcb9460fe8aff6d60d84",
       "source_sha256": "e53c4509e8b7a452884fdfecb373f420811b1877053cbcb9460fe8aff6d60d84",
-      "derivatives": [],
+      "derivatives": [
+        {
+          "file": "assets/browser-candidates/dortmund-container-terminal-candidate-01.mp3",
+          "sha256": "5bef2a630d4aa49497a06d0bce2dba56b4d3c2c6fbc0ba619d0c8829b4589a83",
+          "format": "MP3",
+          "processing": "FFmpeg libmp3lame, 192 kbit/s CBR; metadata stripped; no normalization or fades.",
+          "review_status": "preview_not_auditioned"
+        }
+      ],
       "processing": [],
       "review": {
         "status": "candidate_not_auditioned",
@@ -159,7 +215,11 @@
         "reviewed_on": null,
         "outcome": "Not auditioned; acoustic start signals and operation-specific suitability are unverified."
       },
-      "quality_notes": "Not auditioned; acoustic quality, clipping by listening, and loop suitability are unknown."
+      "quality_notes": "Not auditioned; acoustic quality, clipping by listening, and loop suitability are unknown.",
+      "source_downloaded_on": "2026-10-31",
+      "codec": "Ogg Vorbis",
+      "bit_depth": "not applicable (lossy compressed audio)",
+      "file_size_bytes": 2407978
     },
     {
       "id": "container-reach-stacker-candidate-01",
@@ -183,7 +243,15 @@
       "event_guidance": "Candidate reach stacker movement and truck loading/unloading recording; select operation segments after listening.",
       "sha256": "340f76f67082b3a1ae3dd621709b104736a3b0cb9e166f49da63641293527081",
       "source_sha256": "340f76f67082b3a1ae3dd621709b104736a3b0cb9e166f49da63641293527081",
-      "derivatives": [],
+      "derivatives": [
+        {
+          "file": "assets/browser-candidates/container-reach-stacker-candidate-01.mp3",
+          "sha256": "e5d66b9f091d77b3159e8a227635ea3321337e7c39529b8d7922f369aea1f1d8",
+          "format": "MP3",
+          "processing": "FFmpeg libmp3lame, 192 kbit/s CBR; metadata stripped; no normalization or fades.",
+          "review_status": "preview_not_auditioned"
+        }
+      ],
       "processing": [],
       "review": {
         "status": "candidate_not_auditioned",
@@ -191,7 +259,11 @@
         "reviewed_on": null,
         "outcome": "Not auditioned; operation segments, audio quality and loop points are unverified."
       },
-      "quality_notes": "Not auditioned; acoustic quality, clipping by listening, and loop suitability are unknown."
+      "quality_notes": "Not auditioned; acoustic quality, clipping by listening, and loop suitability are unknown.",
+      "source_downloaded_on": "2026-10-31",
+      "codec": "Ogg Vorbis",
+      "bit_depth": "not applicable (lossy compressed audio)",
+      "file_size_bytes": 1239766
     }
   ]
 }

@@ -1,6 +1,8 @@
 # Collection status
 
-Checked 2026-10-31. Current audio inventory: 6 candidates, 0 release-ready assets, 0 browser-ready files. The audio files total 982.397 seconds (16m 22s) by `ffprobe`; none have been auditioned in this environment. One additional 187.462-second video candidate is tracked separately below.
+Checked 2026-10-31. Current audio inventory: 6 original candidates, 0 release-ready assets, and 6 mechanically browser-compatible MP3 previews. The audio originals total 982.397 seconds (16m 22s) by `ffprobe`; no original or derivative has been auditioned. The previews are not release-ready and do not have event mappings. One additional 187.462-second video candidate is tracked separately below.
+
+The MP3 previews are in `assets/browser-candidates/`. `preview-manifest.json` records source and output hashes, licensing and attribution, technical inspection, and conversion details. The conversion uses FFmpeg `libmp3lame` at 192 kbit/s, strips metadata, and applies no normalization or fades. Their durations may differ slightly from source due to MP3 encoder padding. Listen to each preview and review any selected event/loop before approving it.
 
 ## Candidate
 
@@ -32,6 +34,6 @@ All six audio files have source-page rights records, attribution and hashes in `
 | Terminal warnings | One terminal soundscape source page describes acoustic crane start signals; recording unauditioned | Verify audible signal, research operating context, identify event and review |
 | Reefer ambience | No asset | Source and verify; listen; determine channel and honest loop guidance |
 | Harbour ambience | One rights-documented candidate; unauditioned | Listen; determine channel and honest loop guidance |
-| Browser delivery | Not implemented | Validate actual inventory, produce browser-compatible derivatives and event mappings, rights/coverage reports and integration guidance |
+| Browser delivery | MP3 preview files and generated rights/coverage/candidate mapping reports exist; none are reviewed or event-mapped | Human listen to previews; map only confirmed events; document browser integration guidance |
 
 No source or listening blockers are fabricated for categories without candidates. Counts and duration refer to all six audio candidates above; they must not be interpreted as release-ready coverage achieved. Licence statuses are per item as recorded in `manifest.json`, including the share-alike obligation on the container-ship arrival recording.
