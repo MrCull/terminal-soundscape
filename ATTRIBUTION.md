@@ -92,3 +92,17 @@ Emptying steel scrap from a truck, Work With Sounds / Technical Museum of Sloven
 
 - Source: https://www.soundsofchanges.eu/sound/emptying-steel-scrap-from-a-truck/
 - Licence: CC-BY-4.0 (https://creativecommons.org/licenses/by/4.0/); commercial use: True; share alike: False
+
+## crane-soc-waste-cabin
+
+The Thermal Waste Conversion Plant (3): crane cabin, Museum of Municipal Engineering, sound recordist Monika Widzicka, CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/); resampled to 48 kHz PCM; https://www.soundsofchanges.eu/sound/the-thermal-waste-conversion-plant-3-crane-cabin/
+
+- Source: https://www.soundsofchanges.eu/sound/the-thermal-waste-conversion-plant-3-crane-cabin/
+- Licence: CC-BY-4.0 (https://creativecommons.org/licenses/by/4.0/); commercial use: True; share alike: False
+
+## crane-soc-shipyard
+
+Shipyard crane, Torsten Nilsson, CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/); downmixed and resampled; https://www.soundsofchanges.eu/sound/shipyard-crane-2/
+
+- Source: https://www.soundsofchanges.eu/sound/shipyard-crane-2/
+- Licence: CC-BY-4.0 (https://creativecommons.org/licenses/by/4.0/); commercial use: True; share alike: False

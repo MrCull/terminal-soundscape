@@ -157,3 +157,27 @@ Steel scrap emptied from a truck at a steel plant; unreviewed industrial handlin
 - Authenticity: substitute
 - Playback: full-event — Candidate for playback once after listening and suitability review; no isolated impact has been identified. Do not loop without boundary review.
 - Review: pending — Listening unavailable; listen to original and assess suitability. Not release-ready; loop boundaries unreviewed.
+
+## crane-soc-waste-cabin
+
+Waste transfer crane recorded inside its cabin in a Krakow incineration plant; unreviewed crane substitute.
+
+- File: audio/crane-soc-waste-cabin.wav
+- Licence: CC-BY-4.0 (https://creativecommons.org/licenses/by/4.0/); commercial use: True; share alike: False
+- Attribution: The Thermal Waste Conversion Plant (3): crane cabin, Museum of Municipal Engineering, sound recordist Monika Widzicka, CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/); resampled to 48 kHz PCM; https://www.soundsofchanges.eu/sound/the-thermal-waste-conversion-plant-3-crane-cabin/
+- Source: https://www.soundsofchanges.eu/sound/the-thermal-waste-conversion-plant-3-crane-cabin/
+- Authenticity: substitute
+- Playback: full-event — Candidate for playback once after listening and suitability review; recorded from inside cabin. Do not loop without boundary review.
+- Review: pending — Listening unavailable; listen to original and master, assess suitability. Not release-ready; loop boundaries unreviewed.
+
+## crane-soc-shipyard
+
+Shipyard crane at Gotenius shipyard, Gothenburg; unreviewed crane substitute.
+
+- File: audio/crane-soc-shipyard.wav
+- Licence: CC-BY-4.0 (https://creativecommons.org/licenses/by/4.0/); commercial use: True; share alike: False
+- Attribution: Shipyard crane, Torsten Nilsson, CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/); downmixed and resampled; https://www.soundsofchanges.eu/sound/shipyard-crane-2/
+- Source: https://www.soundsofchanges.eu/sound/shipyard-crane-2/
+- Authenticity: substitute
+- Playback: full-event — Candidate for playback once after listening and suitability review. Do not loop without boundary review.
+- Review: pending — Listening unavailable; listen to original and master, assess suitability. Not release-ready; loop boundaries unreviewed.

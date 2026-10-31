@@ -286,6 +286,50 @@
       "share_alike": false,
       "authenticity": "substitute",
       "review_status": "pending"
+    },
+    {
+      "id": "crane-soc-waste-cabin",
+      "path": "audio/crane-soc-waste-cabin.wav",
+      "event": "waste crane cabin operation candidate",
+      "playback": "full-event",
+      "playback_guidance": "Candidate for playback once after listening and suitability review; recorded from inside cabin. Do not loop without boundary review.",
+      "audio": {
+        "sample_rate": 48000,
+        "channels": 1,
+        "bit_depth": 16,
+        "duration_seconds": 68.25139583333333,
+        "peak": 10183,
+        "clipped_samples": 0
+      },
+      "license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "attribution": "The Thermal Waste Conversion Plant (3): crane cabin, Museum of Municipal Engineering, sound recordist Monika Widzicka, CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/); resampled to 48 kHz PCM; https://www.soundsofchanges.eu/sound/the-thermal-waste-conversion-plant-3-crane-cabin/",
+      "commercial_use": true,
+      "share_alike": false,
+      "authenticity": "substitute",
+      "review_status": "pending"
+    },
+    {
+      "id": "crane-soc-shipyard",
+      "path": "audio/crane-soc-shipyard.wav",
+      "event": "shipyard crane operation candidate",
+      "playback": "full-event",
+      "playback_guidance": "Candidate for playback once after listening and suitability review. Do not loop without boundary review.",
+      "audio": {
+        "sample_rate": 48000,
+        "channels": 1,
+        "bit_depth": 16,
+        "duration_seconds": 183.15697916666667,
+        "peak": 22364,
+        "clipped_samples": 0
+      },
+      "license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "attribution": "Shipyard crane, Torsten Nilsson, CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/); downmixed and resampled; https://www.soundsofchanges.eu/sound/shipyard-crane-2/",
+      "commercial_use": true,
+      "share_alike": false,
+      "authenticity": "substitute",
+      "review_status": "pending"
     }
   ]
 }
