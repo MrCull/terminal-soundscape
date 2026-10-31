@@ -25,4 +25,4 @@ Catalogue generation refuses to overwrite an existing output. `import` only copi
 
 Each accepted entry needs item-level evidence that redistribution is permitted, exact licence and attribution, commercial-use status, provenance and source/output hashes. Do not infer rights from a site-wide statement. Keep non-commercial and share-alike obligations conspicuous. Unknown rights are not eligible for the library. Candidates remain in `assets/candidates/` and must not be treated as release-ready. A named listener must record an actual audition and loop-boundary review before status can become `release_ready`.
 
-See [docs/collection-status.md](docs/collection-status.md) for current inventory, candidate provenance, gaps, and remaining work.
+See [docs/collection-status.md](docs/collection-status.md) for current inventory and gaps, and [docs/research-log.md](docs/research-log.md) for source decisions and operating-context research.
