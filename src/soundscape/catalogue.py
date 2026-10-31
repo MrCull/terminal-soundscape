@@ -34,7 +34,7 @@ def validate(manifest_path: Path) -> list[str]:
     seen: set[str] = set()
     for i, asset in enumerate(data["assets"]):
         prefix = f"assets[{i}]"
-        for key in ("id", "title", "category", "file", "source_url", "creator", "license", "attribution", "commercial_use", "authenticity", "playback", "review"):
+        for key in ("id", "title", "category", "file", "source_url", "creator", "license", "license_url", "license_verified_on", "attribution", "commercial_use", "authenticity", "playback", "review"):
             if not asset.get(key):
                 errors.append(f"{prefix}: missing {key}")
         asset_id = asset.get("id")
@@ -64,16 +64,21 @@ def validate(manifest_path: Path) -> list[str]:
             errors.append(f"{prefix}: {exc}")
         if asset.get("commercial_use") not in ("allowed", "not_allowed", "unknown"):
             errors.append(f"{prefix}: commercial_use must be allowed, not_allowed, or unknown")
-        if asset.get("review", {}).get("status") == "release_ready" and not asset.get("review", {}).get("listener"):
-            errors.append(f"{prefix}: release_ready requires a named listener")
+        if asset.get("review", {}).get("status") == "release_ready":
+            if not asset.get("review", {}).get("listener") or not asset.get("review", {}).get("reviewed_on"):
+                errors.append(f"{prefix}: release_ready requires a named listener and review date")
+            if asset.get("commercial_use") == "unknown" or not asset.get("license_verified_on"):
+                errors.append(f"{prefix}: release_ready requires verified item-level rights")
+        if not isinstance(asset.get("share_alike"), bool):
+            errors.append(f"{prefix}: share_alike must explicitly be true or false")
     return errors
 
 
 def render_catalogue(manifest_path: Path) -> str:
     data = load_manifest(manifest_path)
-    rows = ["# Audio catalogue", "", "Generated from `manifest.json`. Unknown rights or unauditioned recordings are not release-ready.", "", "| ID | Recording | Category | Licence | Commercial use | Review |", "| --- | --- | --- | --- | --- | --- |"]
+    rows = ["# Audio catalogue", "", "Generated from `manifest.json`. Unknown rights or unauditioned recordings are not release-ready. Share-alike obligations and authenticity are shown per item.", "", "| ID | Recording | Category | Licence | Commercial use | Share-alike | Authenticity | Review |", "| --- | --- | --- | --- | --- | --- | --- | --- |"]
     for asset in data["assets"]:
-        rows.append("| {id} | [{title}]({file}) | {category} | {license} | {commercial_use} | {review} |".format(
+        rows.append("| {id} | [{title}]({file}) | {category} | {license} | {commercial_use} | {share_alike} | {authenticity} | {review} |".format(
             id=asset.get("id", ""), title=asset.get("title", ""), file=asset.get("file", ""), category=asset.get("category", ""),
-            license=asset.get("license", "unknown"), commercial_use=asset.get("commercial_use", "unknown"), review=asset.get("review", {}).get("status", "not reviewed")))
+            license=asset.get("license", "unknown"), commercial_use=asset.get("commercial_use", "unknown"), share_alike=asset.get("share_alike", "unknown"), authenticity=asset.get("authenticity", "unknown"), review=asset.get("review", {}).get("status", "not reviewed")))
     return "\n".join(rows) + "\n"
