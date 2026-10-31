@@ -37,3 +37,39 @@ Ursus C 342 agricultural tractor driving; unreviewed candidate substitute for te
 - Authenticity: substitute
 - Playback: full-event — Candidate for playback once at a vehicle point source after listening review. Do not loop without boundary review.
 - Review: pending — Listening unavailable: original and master require listening and suitability review; not release-ready. Loop boundaries have not been reviewed.
+
+## crane-wws-mobile-harbour
+
+Mobile harbour cargo-handling crane at Rauma; unreviewed recording.
+
+- File: audio/crane-wws-mobile-harbour.wav
+- Licence: CC-BY-4.0 (https://creativecommons.org/licenses/by/4.0/); commercial use: True; share alike: False
+- Attribution: WWS Mobileharbourcrane, Work With Sounds / Werstas; sound recordist Teemu Ahola, CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/); converted to mono PCM WAV; https://commons.wikimedia.org/wiki/File:WWS_Mobileharbourcrane.ogg
+- Source: https://commons.wikimedia.org/wiki/File:WWS_Mobileharbourcrane.ogg
+- Authenticity: authentic
+- Playback: full-event — Candidate for playback once at a machine point source after listening and suitability review; do not loop without boundary review.
+- Review: pending — Listening unavailable; listen to original and master and assess suitability. Not release-ready; loop boundaries unreviewed.
+
+## crane-wws-coal
+
+Museum railway coal crane operation; unreviewed industrial crane substitute.
+
+- File: audio/crane-wws-coal.wav
+- Licence: CC-BY-4.0 (https://creativecommons.org/licenses/by/4.0/); commercial use: True; share alike: False
+- Attribution: WWS Coalcrane, Work With Sounds / Konrad Gutkowski; sound recordists Konrad Gutkowski and Julian Blaschke, CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/); converted to mono PCM WAV; https://commons.wikimedia.org/wiki/File:WWS_Coalcrane.ogg
+- Source: https://commons.wikimedia.org/wiki/File:WWS_Coalcrane.ogg
+- Authenticity: substitute
+- Playback: full-event — Candidate for playback once at a machine point source after listening and suitability review; do not loop without boundary review.
+- Review: pending — Listening unavailable; listen to original and master and assess suitability. Not release-ready; loop boundaries unreviewed.
+
+## industrial-wws-steel-scrap
+
+Steel scrap emptied from a truck at a steel plant; unreviewed industrial handling substitute.
+
+- File: audio/industrial-wws-steel-scrap.wav
+- Licence: CC-BY-4.0 (https://creativecommons.org/licenses/by/4.0/); commercial use: True; share alike: False
+- Attribution: Emptying steel scrap from a truck, Work With Sounds / Technical Museum of Slovenia, sound recordist Dušan Oblak, CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/); unchanged; https://www.soundsofchanges.eu/sound/emptying-steel-scrap-from-a-truck/
+- Source: https://www.soundsofchanges.eu/sound/emptying-steel-scrap-from-a-truck/
+- Authenticity: substitute
+- Playback: full-event — Candidate for playback once after listening and suitability review; no isolated impact has been identified. Do not loop without boundary review.
+- Review: pending — Listening unavailable; listen to original and assess suitability. Not release-ready; loop boundaries unreviewed.

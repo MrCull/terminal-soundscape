@@ -1,4 +1,4 @@
-﻿# Crane candidate research
+# Crane candidate research
 
 Checked 2026-10-31. The crane candidate described below was pending listening review at the time of this research. See the [manifest](../manifest.json) for the current inventory and review statuses, and the generated [coverage report](../COVERAGE.md) for current reviewed coverage and gaps.
 
@@ -7,3 +7,14 @@ Checked 2026-10-31. The crane candidate described below was pending listening re
 - **Rejected:** [toy wooden crane noise](https://freesound.org/people/itinerantmonk108/sounds/557268/) is explicitly a toy, not a useful real terminal machine recording.
 
 The [WWS item description](https://commons.wikimedia.org/wiki/File:WWS_Crane.ogg) explains that its bridge crane lifts and transports chained loads. That describes the recorded equipment, not proof of operating sounds or alarm practice at a container terminal. No alarm guidance is inferred.
+
+## Additional candidates checked 2026-10-31
+
+- **Imported, pending:** [Mobile harbour crane](https://commons.wikimedia.org/w/index.php?title=File:WWS_Mobileharbourcrane.ogg&oldid=565048087), Work With Sounds / Werstas, recordist Teemu Ahola. The item specifies a Gottwald HMK7408B mobile harbour cargo crane capable of handling containers, bulk and general cargo. It does not identify the specific action recorded. Its item page grants CC BY 4.0, including adaptation, and records VRT permission. The source Ogg is stereo 96 kHz and approximately 113 kbps; the manifest records original and output hashes and processing. Listening is still required.
+- **Imported, pending:** [Coal crane](https://commons.wikimedia.org/w/index.php?title=File:WWS_Coalcrane.ogg&oldid=1175696679), Work With Sounds / Konrad Gutkowski, recordists Konrad Gutkowski and Julian Blaschke. The item identifies a museum railway coal crane and describes its motor, slewing gear and hoist winch; it is a substitute, not a container crane. Item-specific CC BY 4.0 permits adaptation. The source is stereo 44.1 kHz Ogg at approximately 109 kbps. Listening is still required.
+- **Imported, pending:** [Steel scrap emptied from a truck](https://commons.wikimedia.org/w/index.php?title=File:WWS_Emptyingsteelscrapfromatruck.ogg&oldid=1081671092) is an industrial handling substitute, not evidence of container contact. Its item states CC BY 4.0. Commons returned HTTP 429; the linked Sounds of Changes item offers its original WAV, which was downloaded unchanged. No isolated contact is established.
+- **Not imported:** [Forklift truck](https://commons.wikimedia.org/w/index.php?title=File:WWS_Forklifttruck.ogg&oldid=1205699835), a diesel pallet forklift with item-specific CC BY 4.0. Not downloaded after the 429 response; it is not a container carrier.
+
+The imported items are complete independent source recordings, not isolated actions or loop-ready edits. Original downloads are preserved temporarily outside the repository at `C:\Users\culll\soundscape-crane-originals`; their SHA-256 hashes are in the manifest. None has been listened to or is release-ready.
+
+- **Candidate, not imported:** [Waste plant crane cabin](https://www.soundsofchanges.eu/sound/the-thermal-waste-conversion-plant-3-crane-cabin/) identifies Monika Widzicka and a waste crane; no matching item-specific Commons licence record was found. The site [licence page](https://www.soundsofchanges.eu/use-the-sounds/) grants CC BY 4.0 for all sounds, but further item-level evidence is sought. Downloaded original retained temporarily; not auditioned. The [Sounds of Changes bridge crane](https://www.soundsofchanges.eu/sound/crane/) is the existing WWS bridge recording, not an independent candidate.
