@@ -73,3 +73,51 @@ Engine order telegraph on museum cargo ship Soldek.
 - Authenticity: authentic
 - Playback: full-event — Play once at the ship machinery after listening; do not treat as a terminal warning or loop.
 - Review: pending — No listening available. Listen to original and master, assess suitability and any proposed loop boundary; not release-ready.
+
+## vehicle-ursus-c328-driving
+
+Ursus C 328 agricultural tractor driving; unreviewed candidate substitute.
+
+- File: audio/vehicle-ursus-c328-driving.wav
+- Licence: CC-BY-4.0 (https://creativecommons.org/licenses/by/4.0/); commercial use: True; share alike: False
+- Attribution: WWS_TractorUrsusC328driving.ogg, Work With Sounds / Museum of Municipal Engineering, sound recordist Monika Widzicka, CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/); converted to mono PCM WAV; https://commons.wikimedia.org/wiki/File:WWS_TractorUrsusC328driving.ogg
+- Source: https://commons.wikimedia.org/wiki/File:WWS_TractorUrsusC328driving.ogg
+- Authenticity: substitute
+- Playback: full-event — Play once at a point source only after listening and suitability review. Do not loop without boundary review.
+- Review: pending — Listening unavailable. Original and master require listening and suitability review; not release-ready. Loop boundaries unreviewed.
+
+## vehicle-ursus-c328-engine
+
+Ursus C 328 agricultural tractor engine; unreviewed candidate substitute.
+
+- File: audio/vehicle-ursus-c328-engine.wav
+- Licence: CC-BY-4.0 (https://creativecommons.org/licenses/by/4.0/); commercial use: True; share alike: False
+- Attribution: WWS_TractorUrsusC328engine.ogg, Work With Sounds / Museum of Municipal Engineering, sound recordist Monika Widzicka, CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/); converted to mono PCM WAV; https://commons.wikimedia.org/wiki/File:WWS_TractorUrsusC328engine.ogg
+- Source: https://commons.wikimedia.org/wiki/File:WWS_TractorUrsusC328engine.ogg
+- Authenticity: substitute
+- Playback: full-event — Play once at a point source only after listening and suitability review. Do not loop without boundary review.
+- Review: pending — Listening unavailable. Original and master require listening and suitability review; not release-ready. Loop boundaries unreviewed.
+
+## vehicle-ursus-c342-engine
+
+Ursus C 342 prototype agricultural tractor engine; unreviewed candidate substitute.
+
+- File: audio/vehicle-ursus-c342-engine.wav
+- Licence: CC-BY-4.0 (https://creativecommons.org/licenses/by/4.0/); commercial use: True; share alike: False
+- Attribution: WWS_TractorUrsusC342engine.ogg, Work With Sounds / Museum of Municipal Engineering, sound recordist Monika Widzicka, CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/); converted to mono PCM WAV; https://commons.wikimedia.org/wiki/File:WWS_TractorUrsusC342engine.ogg
+- Source: https://commons.wikimedia.org/wiki/File:WWS_TractorUrsusC342engine.ogg
+- Authenticity: substitute
+- Playback: full-event — Play once at a point source only after listening and suitability review. Do not loop without boundary review.
+- Review: pending — Listening unavailable. Original and master require listening and suitability review; not release-ready. Loop boundaries unreviewed.
+
+## vehicle-lanz-hl12
+
+Lanz Bulldog HL 12 agricultural tractor operation; unreviewed candidate substitute.
+
+- File: audio/vehicle-lanz-hl12.wav
+- Licence: CC-BY-4.0 (https://creativecommons.org/licenses/by/4.0/); commercial use: True; share alike: False
+- Attribution: WWS_TractorLanzBuldogHL12driving.ogg, Work With Sounds / Museum of Municipal Engineering, sound recordist Monika Widzicka, CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/); converted to mono PCM WAV; https://commons.wikimedia.org/wiki/File:WWS_TractorLanzBuldogHL12driving.ogg
+- Source: https://commons.wikimedia.org/wiki/File:WWS_TractorLanzBuldogHL12driving.ogg
+- Authenticity: substitute
+- Playback: full-event — Play once at a point source only after listening and suitability review. Do not loop without boundary review.
+- Review: pending — Listening unavailable. Original and master require listening and suitability review; not release-ready. Loop boundaries unreviewed.

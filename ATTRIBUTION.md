@@ -43,3 +43,31 @@ WWS_ShipSodekengineordertelegraph.ogg, Work With Sounds / Museum of Municipal En
 
 - Source: https://commons.wikimedia.org/wiki/File:WWS_ShipSodekengineordertelegraph.ogg
 - Licence: CC-BY-4.0 (https://creativecommons.org/licenses/by/4.0/); commercial use: True; share alike: False
+
+## vehicle-ursus-c328-driving
+
+WWS_TractorUrsusC328driving.ogg, Work With Sounds / Museum of Municipal Engineering, sound recordist Monika Widzicka, CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/); converted to mono PCM WAV; https://commons.wikimedia.org/wiki/File:WWS_TractorUrsusC328driving.ogg
+
+- Source: https://commons.wikimedia.org/wiki/File:WWS_TractorUrsusC328driving.ogg
+- Licence: CC-BY-4.0 (https://creativecommons.org/licenses/by/4.0/); commercial use: True; share alike: False
+
+## vehicle-ursus-c328-engine
+
+WWS_TractorUrsusC328engine.ogg, Work With Sounds / Museum of Municipal Engineering, sound recordist Monika Widzicka, CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/); converted to mono PCM WAV; https://commons.wikimedia.org/wiki/File:WWS_TractorUrsusC328engine.ogg
+
+- Source: https://commons.wikimedia.org/wiki/File:WWS_TractorUrsusC328engine.ogg
+- Licence: CC-BY-4.0 (https://creativecommons.org/licenses/by/4.0/); commercial use: True; share alike: False
+
+## vehicle-ursus-c342-engine
+
+WWS_TractorUrsusC342engine.ogg, Work With Sounds / Museum of Municipal Engineering, sound recordist Monika Widzicka, CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/); converted to mono PCM WAV; https://commons.wikimedia.org/wiki/File:WWS_TractorUrsusC342engine.ogg
+
+- Source: https://commons.wikimedia.org/wiki/File:WWS_TractorUrsusC342engine.ogg
+- Licence: CC-BY-4.0 (https://creativecommons.org/licenses/by/4.0/); commercial use: True; share alike: False
+
+## vehicle-lanz-hl12
+
+WWS_TractorLanzBuldogHL12driving.ogg, Work With Sounds / Museum of Municipal Engineering, sound recordist Monika Widzicka, CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/); converted to mono PCM WAV; https://commons.wikimedia.org/wiki/File:WWS_TractorLanzBuldogHL12driving.ogg
+
+- Source: https://commons.wikimedia.org/wiki/File:WWS_TractorLanzBuldogHL12driving.ogg
+- Licence: CC-BY-4.0 (https://creativecommons.org/licenses/by/4.0/); commercial use: True; share alike: False
