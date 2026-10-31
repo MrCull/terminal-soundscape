@@ -1,6 +1,6 @@
 # Terminal Soundscape
 
-An independently usable, traceable collection of real terminal and port audio for browser simulations. The inventory contains six unauditioned audio candidates and six browser-compatible MP3 previews. There are no release-ready assets or validated event mappings yet.
+An independently usable, traceable collection of real terminal and port audio for browser simulations. The inventory contains 106 unauditioned audio candidates and six browser-compatible MP3 previews. There are no release-ready assets or validated event mappings yet. The 100 additions are source-documented port and harbour field recordings. Eight source descriptions mention cargo, terminal, or vessel operations; the other 92 are port and harbour soundscapes. All remain unauditioned.
 
 ## Maintainer commands
 

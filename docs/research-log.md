@@ -21,3 +21,8 @@ Updated 2026-10-31. These are source-page checks, not listening reviews. Rights 
 ## Operational guidance
 
 Warning sounds must be tied to the equipment and operating context; one generic alarm should not be played for every event. As a United States marine-terminal example, OSHA says rail-mounted cranes must have an effective travel warning device used to warn employees in the path of a moving crane ([29 CFR 1917.45](https://www.osha.gov/laws-regs/regulations/standardnumber/1917/1917.45)). OSHA's marine-terminal safety publication recommends maintenance and operation of horns, backup alarms and warning devices on terminal vehicles ([OSHA 3337](https://obis.osha.gov/Publications/3337-07-2007-English-07192007.html)). These sources are not a universal rule set for all ports or jurisdictions. Local procedures and the specific machine determine whether a warning is appropriate.
+
+
+## Additional port and harbour recordings (2026-10-31)
+
+The branch now includes 100 additional Aporee port and harbour field recordings hosted by the Internet Archive. Item metadata for each recording states CC BY 3.0; the manifest stores its source page, creator/uploader, licence, hash, and technical properties. Eight source descriptions mention cargo, terminal, ferry or vessel operations. The other 92 describe port and harbour soundscapes, including fishing harbours. They remain context recordings, not identified terminal-equipment events. None has been auditioned or marked release-ready.

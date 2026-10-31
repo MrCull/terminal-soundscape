@@ -232,6 +232,8 @@ def coverage_data(manifest_path: Path) -> dict:
         "terminal_warnings": {"manifest_categories": ["terminal_warning_candidate"], "candidate_count": 0, "release_ready_count": 0, "duration_seconds": 0.0},
         "reefer_ambience": {"manifest_categories": ["reefer_ambience"], "candidate_count": 0, "release_ready_count": 0, "duration_seconds": 0.0},
         "harbour_ambience": {"manifest_categories": ["harbour_ambience"], "candidate_count": 0, "release_ready_count": 0, "duration_seconds": 0.0},
+        "port_harbour_soundscapes": {"manifest_categories": ["port_harbour_soundscape"], "candidate_count": 0, "release_ready_count": 0, "duration_seconds": 0.0},
+        "terminal_cargo_port_candidates": {"manifest_categories": ["terminal_or_cargo_port_candidate"], "candidate_count": 0, "release_ready_count": 0, "duration_seconds": 0.0},
     }
     for category in categories.values():
         for asset in data["assets"]:
