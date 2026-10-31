@@ -1,13 +1,13 @@
 # Collection coverage
 
-Recordings: 7
-Total duration: 486.796 seconds
+Recordings: 16
+Total duration: 1136.5 seconds
 
-- Licences: CC-BY-4.0: 7
-- Playback types: full-event: 7
-- Authenticity: authentic: 1, substitute: 6
-- Listening status: pending: 7
-- Events: container crane loading operation candidate: 1, crane movement candidate: 1, driving candidate: 1, engine operation candidate: 2, tractor movement candidate: 1, tractor operation candidate: 1
+- Licences: CC-BY-4.0: 16
+- Playback types: full-event: 16
+- Authenticity: authentic: 7, substitute: 9
+- Listening status: pending: 16
+- Events: bulk terminal machinery soundscape candidate: 1, coal crane operation candidate: 1, container crane loading operation candidate: 1, container terminal soundscape: 1, crane movement candidate: 1, driving candidate: 1, engine operation candidate: 2, historic vessel whistle: 1, mobile harbour crane operation candidate: 1, scrap terminal soundscape candidate: 1, ship engine order telegraph: 1, steel scrap handling candidate: 1, terminal lorry soundscape candidate: 1, tractor movement candidate: 1, tractor operation candidate: 1
 
 Priority categories (reviewed and classified recordings only):
 - crane movement: gap ? no reviewed recording classified

@@ -68,6 +68,72 @@
       "review_status": "pending"
     },
     {
+      "id": "harbour-wws-dortmund",
+      "path": "audio/harbour-wws-dortmund.wav",
+      "event": "container terminal soundscape",
+      "playback": "full-event",
+      "playback_guidance": "Play as bounded environmental ambience after listening; not a verified seamless loop.",
+      "audio": {
+        "sample_rate": 48000,
+        "channels": 2,
+        "bit_depth": 16,
+        "duration_seconds": 189.59529166666667,
+        "peak": 19547,
+        "clipped_samples": 0
+      },
+      "license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "attribution": "WWS_ContainerTerminalatthePortofDortmund.ogg, Work With Sounds / Konrad Gutkowski; sound recordists Konrad Gutkowski and Jonathan Nicolai, CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/); converted to PCM, resampled and channel-converted where applicable; https://commons.wikimedia.org/wiki/File:WWS_ContainerTerminalatthePortofDortmund.ogg",
+      "commercial_use": true,
+      "share_alike": false,
+      "authenticity": "authentic",
+      "review_status": "pending"
+    },
+    {
+      "id": "warning-wws-nixe-whistle",
+      "path": "audio/warning-wws-nixe-whistle.wav",
+      "event": "historic vessel whistle",
+      "playback": "full-event",
+      "playback_guidance": "Candidate vessel signal only after listening; do not imply a modern crane or vehicle alarm or assign a specific signal sequence.",
+      "audio": {
+        "sample_rate": 48000,
+        "channels": 1,
+        "bit_depth": 16,
+        "duration_seconds": 10.475104166666666,
+        "peak": 7243,
+        "clipped_samples": 0
+      },
+      "license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "attribution": "WWS_Steamwhistle.ogg, Work With Sounds / Konrad Gutkowski; sound recordists Konrad Gutkowski and Jonathan Nicolai, CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/); converted to PCM, resampled and channel-converted where applicable; https://commons.wikimedia.org/wiki/File:WWS_Steamwhistle.ogg",
+      "commercial_use": true,
+      "share_alike": false,
+      "authenticity": "substitute",
+      "review_status": "pending"
+    },
+    {
+      "id": "ship-wws-soldek-telegraph",
+      "path": "audio/ship-wws-soldek-telegraph.wav",
+      "event": "ship engine order telegraph",
+      "playback": "full-event",
+      "playback_guidance": "Play once at the ship machinery after listening; do not treat as a terminal warning or loop.",
+      "audio": {
+        "sample_rate": 48000,
+        "channels": 1,
+        "bit_depth": 16,
+        "duration_seconds": 26.8451875,
+        "peak": 21381,
+        "clipped_samples": 0
+      },
+      "license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "attribution": "WWS_ShipSodekengineordertelegraph.ogg, Work With Sounds / Museum of Municipal Engineering; sound recordist Monika Widzicka, CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/); converted to PCM, resampled and channel-converted where applicable; https://commons.wikimedia.org/wiki/File:WWS_ShipSodekengineordertelegraph.ogg",
+      "commercial_use": true,
+      "share_alike": false,
+      "authenticity": "authentic",
+      "review_status": "pending"
+    },
+    {
       "id": "vehicle-ursus-c328-driving",
       "path": "audio/vehicle-ursus-c328-driving.wav",
       "event": "driving candidate",
@@ -153,6 +219,138 @@
       "commercial_use": true,
       "share_alike": false,
       "authenticity": "substitute",
+      "review_status": "pending"
+    },
+    {
+      "id": "crane-wws-mobile-harbour",
+      "path": "audio/crane-wws-mobile-harbour.wav",
+      "event": "mobile harbour crane operation candidate",
+      "playback": "full-event",
+      "playback_guidance": "Candidate for playback once at a machine point source after listening and suitability review; do not loop without boundary review.",
+      "audio": {
+        "sample_rate": 48000,
+        "channels": 1,
+        "bit_depth": 16,
+        "duration_seconds": 48.548,
+        "peak": 8169,
+        "clipped_samples": 0
+      },
+      "license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "attribution": "WWS Mobileharbourcrane, Work With Sounds / Werstas; sound recordist Teemu Ahola, CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/); converted to mono PCM WAV; https://commons.wikimedia.org/wiki/File:WWS_Mobileharbourcrane.ogg",
+      "commercial_use": true,
+      "share_alike": false,
+      "authenticity": "authentic",
+      "review_status": "pending"
+    },
+    {
+      "id": "crane-wws-coal",
+      "path": "audio/crane-wws-coal.wav",
+      "event": "coal crane operation candidate",
+      "playback": "full-event",
+      "playback_guidance": "Candidate for playback once at a machine point source after listening and suitability review; do not loop without boundary review.",
+      "audio": {
+        "sample_rate": 48000,
+        "channels": 1,
+        "bit_depth": 16,
+        "duration_seconds": 81.82277083333334,
+        "peak": 12457,
+        "clipped_samples": 0
+      },
+      "license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "attribution": "WWS Coalcrane, Work With Sounds / Konrad Gutkowski; sound recordists Konrad Gutkowski and Julian Blaschke, CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/); converted to mono PCM WAV; https://commons.wikimedia.org/wiki/File:WWS_Coalcrane.ogg",
+      "commercial_use": true,
+      "share_alike": false,
+      "authenticity": "substitute",
+      "review_status": "pending"
+    },
+    {
+      "id": "industrial-wws-steel-scrap",
+      "path": "audio/industrial-wws-steel-scrap.wav",
+      "event": "steel scrap handling candidate",
+      "playback": "full-event",
+      "playback_guidance": "Candidate for playback once after listening and suitability review; no isolated impact has been identified. Do not loop without boundary review.",
+      "audio": {
+        "sample_rate": 48000,
+        "channels": 1,
+        "bit_depth": 16,
+        "duration_seconds": 56.92370833333333,
+        "peak": 29208,
+        "clipped_samples": 0
+      },
+      "license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "attribution": "Emptying steel scrap from a truck, Work With Sounds / Technical Museum of Slovenia, sound recordist Dušan Oblak, CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/); unchanged; https://www.soundsofchanges.eu/sound/emptying-steel-scrap-from-a-truck/",
+      "commercial_use": true,
+      "share_alike": false,
+      "authenticity": "substitute",
+      "review_status": "pending"
+    },
+    {
+      "id": "port-gdynia-lorries",
+      "path": "audio/port-gdynia-lorries.wav",
+      "event": "terminal lorry soundscape candidate",
+      "playback": "full-event",
+      "playback_guidance": "Pending listening and suitability review. Treat as a stereo environmental recording; do not assume isolated actions or loop without boundary review.",
+      "audio": {
+        "sample_rate": 48000,
+        "channels": 2,
+        "bit_depth": 16,
+        "duration_seconds": 70.0768125,
+        "peak": 3209,
+        "clipped_samples": 0
+      },
+      "license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "attribution": "Lorries at Gdynia container-terminal entrance, Museum of Municipal Engineering, sound recordist Monika Widzicka, CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/); resampled to 48 kHz PCM WAV; https://www.soundsofchanges.eu/sound/gdynia-port-container-terminal-2/",
+      "commercial_use": true,
+      "share_alike": false,
+      "authenticity": "authentic",
+      "review_status": "pending"
+    },
+    {
+      "id": "port-gdansk-coal",
+      "path": "audio/port-gdansk-coal.wav",
+      "event": "bulk terminal machinery soundscape candidate",
+      "playback": "full-event",
+      "playback_guidance": "Pending listening and suitability review. Treat as a stereo environmental recording; do not assume isolated actions or loop without boundary review.",
+      "audio": {
+        "sample_rate": 48000,
+        "channels": 2,
+        "bit_depth": 16,
+        "duration_seconds": 66.9256875,
+        "peak": 7869,
+        "clipped_samples": 0
+      },
+      "license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "attribution": "Coal transhipment machinery at Gdansk port, Museum of Municipal Engineering, sound recordist Monika Widzicka, CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/); resampled to 48 kHz PCM WAV; https://www.soundsofchanges.eu/sound/gdansk-port-coal-transhipment/",
+      "commercial_use": true,
+      "share_alike": false,
+      "authenticity": "authentic",
+      "review_status": "pending"
+    },
+    {
+      "id": "port-gdansk-scrap",
+      "path": "audio/port-gdansk-scrap.wav",
+      "event": "scrap terminal soundscape candidate",
+      "playback": "full-event",
+      "playback_guidance": "Pending listening and suitability review. Treat as a stereo environmental recording; do not assume isolated actions or loop without boundary review.",
+      "audio": {
+        "sample_rate": 48000,
+        "channels": 2,
+        "bit_depth": 16,
+        "duration_seconds": 98.49295833333333,
+        "peak": 8040,
+        "clipped_samples": 0
+      },
+      "license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "attribution": "Scrap metal transhipment at Gdansk port, Museum of Municipal Engineering, sound recordist Monika Widzicka, CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/); resampled to 48 kHz PCM WAV; https://www.soundsofchanges.eu/sound/gdansk-port-scrap-metal-transhipment/",
+      "commercial_use": true,
+      "share_alike": false,
+      "authenticity": "authentic",
       "review_status": "pending"
     }
   ]

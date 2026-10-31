@@ -38,6 +38,42 @@ Ursus C 342 agricultural tractor driving; unreviewed candidate substitute for te
 - Playback: full-event — Candidate for playback once at a vehicle point source after listening review. Do not loop without boundary review.
 - Review: pending — Listening unavailable: original and master require listening and suitability review; not release-ready. Loop boundaries have not been reviewed.
 
+## harbour-wws-dortmund
+
+Inland container terminal soundscape at the Port of Dortmund.
+
+- File: audio/harbour-wws-dortmund.wav
+- Licence: CC-BY-4.0 (https://creativecommons.org/licenses/by/4.0/); commercial use: True; share alike: False
+- Attribution: WWS_ContainerTerminalatthePortofDortmund.ogg, Work With Sounds / Konrad Gutkowski; sound recordists Konrad Gutkowski and Jonathan Nicolai, CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/); converted to PCM, resampled and channel-converted where applicable; https://commons.wikimedia.org/wiki/File:WWS_ContainerTerminalatthePortofDortmund.ogg
+- Source: https://commons.wikimedia.org/wiki/File:WWS_ContainerTerminalatthePortofDortmund.ogg
+- Authenticity: authentic
+- Playback: full-event — Play as bounded environmental ambience after listening; not a verified seamless loop.
+- Review: pending — No listening available. Listen to original and master, assess suitability and any proposed loop boundary; not release-ready.
+
+## warning-wws-nixe-whistle
+
+Steam whistle of historic inland tug Nixe.
+
+- File: audio/warning-wws-nixe-whistle.wav
+- Licence: CC-BY-4.0 (https://creativecommons.org/licenses/by/4.0/); commercial use: True; share alike: False
+- Attribution: WWS_Steamwhistle.ogg, Work With Sounds / Konrad Gutkowski; sound recordists Konrad Gutkowski and Jonathan Nicolai, CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/); converted to PCM, resampled and channel-converted where applicable; https://commons.wikimedia.org/wiki/File:WWS_Steamwhistle.ogg
+- Source: https://commons.wikimedia.org/wiki/File:WWS_Steamwhistle.ogg
+- Authenticity: substitute
+- Playback: full-event — Candidate vessel signal only after listening; do not imply a modern crane or vehicle alarm or assign a specific signal sequence.
+- Review: pending — No listening available. Listen to original and master, assess suitability and any proposed loop boundary; not release-ready.
+
+## ship-wws-soldek-telegraph
+
+Engine order telegraph on museum cargo ship Soldek.
+
+- File: audio/ship-wws-soldek-telegraph.wav
+- Licence: CC-BY-4.0 (https://creativecommons.org/licenses/by/4.0/); commercial use: True; share alike: False
+- Attribution: WWS_ShipSodekengineordertelegraph.ogg, Work With Sounds / Museum of Municipal Engineering; sound recordist Monika Widzicka, CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/); converted to PCM, resampled and channel-converted where applicable; https://commons.wikimedia.org/wiki/File:WWS_ShipSodekengineordertelegraph.ogg
+- Source: https://commons.wikimedia.org/wiki/File:WWS_ShipSodekengineordertelegraph.ogg
+- Authenticity: authentic
+- Playback: full-event — Play once at the ship machinery after listening; do not treat as a terminal warning or loop.
+- Review: pending — No listening available. Listen to original and master, assess suitability and any proposed loop boundary; not release-ready.
+
 ## vehicle-ursus-c328-driving
 
 Ursus C 328 agricultural tractor driving; unreviewed candidate substitute.
@@ -84,4 +120,76 @@ Lanz Bulldog HL 12 agricultural tractor operation; unreviewed candidate substitu
 - Source: https://commons.wikimedia.org/wiki/File:WWS_TractorLanzBuldogHL12driving.ogg
 - Authenticity: substitute
 - Playback: full-event — Play once at a point source only after listening and suitability review. Do not loop without boundary review.
+- Review: pending — Listening unavailable. Original and master require listening and suitability review; not release-ready. Loop boundaries unreviewed.
+
+## crane-wws-mobile-harbour
+
+Mobile harbour cargo-handling crane at Rauma; unreviewed recording.
+
+- File: audio/crane-wws-mobile-harbour.wav
+- Licence: CC-BY-4.0 (https://creativecommons.org/licenses/by/4.0/); commercial use: True; share alike: False
+- Attribution: WWS Mobileharbourcrane, Work With Sounds / Werstas; sound recordist Teemu Ahola, CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/); converted to mono PCM WAV; https://commons.wikimedia.org/wiki/File:WWS_Mobileharbourcrane.ogg
+- Source: https://commons.wikimedia.org/wiki/File:WWS_Mobileharbourcrane.ogg
+- Authenticity: authentic
+- Playback: full-event — Candidate for playback once at a machine point source after listening and suitability review; do not loop without boundary review.
+- Review: pending — Listening unavailable; listen to original and master and assess suitability. Not release-ready; loop boundaries unreviewed.
+
+## crane-wws-coal
+
+Museum railway coal crane operation; unreviewed industrial crane substitute.
+
+- File: audio/crane-wws-coal.wav
+- Licence: CC-BY-4.0 (https://creativecommons.org/licenses/by/4.0/); commercial use: True; share alike: False
+- Attribution: WWS Coalcrane, Work With Sounds / Konrad Gutkowski; sound recordists Konrad Gutkowski and Julian Blaschke, CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/); converted to mono PCM WAV; https://commons.wikimedia.org/wiki/File:WWS_Coalcrane.ogg
+- Source: https://commons.wikimedia.org/wiki/File:WWS_Coalcrane.ogg
+- Authenticity: substitute
+- Playback: full-event — Candidate for playback once at a machine point source after listening and suitability review; do not loop without boundary review.
+- Review: pending — Listening unavailable; listen to original and master and assess suitability. Not release-ready; loop boundaries unreviewed.
+
+## industrial-wws-steel-scrap
+
+Steel scrap emptied from a truck at a steel plant; unreviewed industrial handling substitute.
+
+- File: audio/industrial-wws-steel-scrap.wav
+- Licence: CC-BY-4.0 (https://creativecommons.org/licenses/by/4.0/); commercial use: True; share alike: False
+- Attribution: Emptying steel scrap from a truck, Work With Sounds / Technical Museum of Slovenia, sound recordist Dušan Oblak, CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/); unchanged; https://www.soundsofchanges.eu/sound/emptying-steel-scrap-from-a-truck/
+- Source: https://www.soundsofchanges.eu/sound/emptying-steel-scrap-from-a-truck/
+- Authenticity: substitute
+- Playback: full-event — Candidate for playback once after listening and suitability review; no isolated impact has been identified. Do not loop without boundary review.
+- Review: pending — Listening unavailable; listen to original and assess suitability. Not release-ready; loop boundaries unreviewed.
+
+## port-gdynia-lorries
+
+Lorries at Gdynia container-terminal entrance; pending full-recording candidate.
+
+- File: audio/port-gdynia-lorries.wav
+- Licence: CC-BY-4.0 (https://creativecommons.org/licenses/by/4.0/); commercial use: True; share alike: False
+- Attribution: Lorries at Gdynia container-terminal entrance, Museum of Municipal Engineering, sound recordist Monika Widzicka, CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/); resampled to 48 kHz PCM WAV; https://www.soundsofchanges.eu/sound/gdynia-port-container-terminal-2/
+- Source: https://www.soundsofchanges.eu/sound/gdynia-port-container-terminal-2/
+- Authenticity: authentic
+- Playback: full-event — Pending listening and suitability review. Treat as a stereo environmental recording; do not assume isolated actions or loop without boundary review.
+- Review: pending — Listening unavailable. Original and master require listening and suitability review; not release-ready. Loop boundaries unreviewed.
+
+## port-gdansk-coal
+
+Coal transhipment machinery at Gdansk port; pending full-recording candidate.
+
+- File: audio/port-gdansk-coal.wav
+- Licence: CC-BY-4.0 (https://creativecommons.org/licenses/by/4.0/); commercial use: True; share alike: False
+- Attribution: Coal transhipment machinery at Gdansk port, Museum of Municipal Engineering, sound recordist Monika Widzicka, CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/); resampled to 48 kHz PCM WAV; https://www.soundsofchanges.eu/sound/gdansk-port-coal-transhipment/
+- Source: https://www.soundsofchanges.eu/sound/gdansk-port-coal-transhipment/
+- Authenticity: authentic
+- Playback: full-event — Pending listening and suitability review. Treat as a stereo environmental recording; do not assume isolated actions or loop without boundary review.
+- Review: pending — Listening unavailable. Original and master require listening and suitability review; not release-ready. Loop boundaries unreviewed.
+
+## port-gdansk-scrap
+
+Scrap metal transhipment at Gdansk port; pending full-recording candidate.
+
+- File: audio/port-gdansk-scrap.wav
+- Licence: CC-BY-4.0 (https://creativecommons.org/licenses/by/4.0/); commercial use: True; share alike: False
+- Attribution: Scrap metal transhipment at Gdansk port, Museum of Municipal Engineering, sound recordist Monika Widzicka, CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/); resampled to 48 kHz PCM WAV; https://www.soundsofchanges.eu/sound/gdansk-port-scrap-metal-transhipment/
+- Source: https://www.soundsofchanges.eu/sound/gdansk-port-scrap-metal-transhipment/
+- Authenticity: authentic
+- Playback: full-event — Pending listening and suitability review. Treat as a stereo environmental recording; do not assume isolated actions or loop without boundary review.
 - Review: pending — Listening unavailable. Original and master require listening and suitability review; not release-ready. Loop boundaries unreviewed.

@@ -1,10 +1,13 @@
 # Terminal warning research
 
-Checked 2026-10-31. No warning recording has been acquired or auditioned for
-this collection. The warning category remains a gap; the candidate below is
-not a release-ready asset and is not included in the manifest.
+Checked 2026-10-31. A historic vessel whistle has been acquired as a pending
+candidate; no warning recording has been auditioned. The reviewed warning
+category remains a gap.
 
 ## Candidate log
+
+- **Acquired, pending listening:** [Nixe steam whistle](https://commons.wikimedia.org/w/index.php?title=File:WWS_Steamwhistle.ogg&oldid=565048280), Work With Sounds / Konrad Gutkowski, recordists Konrad Gutkowski and Jonathan Nicolai, is the whistle of a historic inland tug. The item explains that different sequences could communicate danger, warning, visibility and manoeuvring; it does not establish the meaning of this recording's sequence. Its item page states CC BY 4.0. Imported as `warning-wws-nixe-whistle`; see manifest for hashes and processing. This is a historic vessel signal, not a modern equipment alarm. Listen before assessing use and do not assert a particular signal meaning.
+- **Related ship machinery:** [Sołdek engine order telegraph](https://commons.wikimedia.org/w/index.php?title=File:WWS_ShipSodekengineordertelegraph.ogg&oldid=1185306453) is an engine room communication device aboard a museum cargo ship, not a terminal warning. Work With Sounds / Museum of Municipal Engineering, recordist Monika Widzicka; CC BY 4.0. Imported as a pending ship-machinery recording.
 
 - **Promising; download blocked:** [Back-up white noise.ogg](https://commons.wikimedia.org/w/index.php?title=File:Back-up_white_noise.ogg&oldid=814680253), by Ke4roh. The creator describes their own work as a white-noise reversing beeper on a recycling truck, dated 8 February 2021. This is a real vehicle warning candidate and a potential substitute, not a recording of a verified terminal vehicle. The item-specific page was checked on 2026-10-31 and identifies CC BY-SA 4.0: commercial use and adaptation are allowed with credit, a licence link, change indication, and share-alike for adaptations. The page lists a 7.506-second, 129 kbps Ogg Vorbis original; its lossy source limits fidelity. Commons reports original SHA-1 `71500b016280d285ac6854bd46eef6373847247e` (not a locally verified hash). An attempt to download the original from Wikimedia on 2026-10-31 returned HTTP 429 (too many requests). Respect that response and try again later through normal access; no source was acquired, hashed locally, converted, imported or auditioned. Listening must determine suitability and whether the alarm is separable from engine or other background. Do not claim an isolated alarm or a seamless loop without review.
 - **Rejected:** [Reverse beeping #1](https://bigsoundbank.com/truck-reverse-beep-s1298.html), by Joseph Sardin, is marked as computer-made Foley. It is not a genuine vehicle recording despite the CC0 permission.
