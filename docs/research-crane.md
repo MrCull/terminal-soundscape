@@ -7,3 +7,5 @@ Checked 2026-10-31. The inventory contains zero files, zero seconds, and no lice
 - **Rejected:** [toy wooden crane noise](https://freesound.org/people/itinerantmonk108/sounds/557268/) is explicitly a toy, not a useful real terminal machine recording.
 
 The [WWS item description](https://commons.wikimedia.org/wiki/File:WWS_Crane.ogg) explains that its bridge crane lifts and transports chained loads. That describes the recorded equipment, not proof of operating sounds or alarm practice at a container terminal. No alarm guidance is inferred.
+
+Downloaded original SHA-256: 0b673f3560432af138236c00c1f1bf7616f77e01af9f7c094d58466bd59e2d67.
