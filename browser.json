@@ -44,6 +44,28 @@
       "share_alike": false,
       "authenticity": "authentic",
       "review_status": "pending"
+    },
+    {
+      "id": "vehicle-ursus-driving",
+      "path": "audio/vehicle-ursus-driving.wav",
+      "event": "tractor movement candidate",
+      "playback": "full-event",
+      "playback_guidance": "Candidate for playback once at a vehicle point source after listening review. Do not loop without boundary review.",
+      "audio": {
+        "sample_rate": 48000,
+        "channels": 1,
+        "bit_depth": 16,
+        "duration_seconds": 91.43583333333333,
+        "peak": 28038,
+        "clipped_samples": 0
+      },
+      "license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "attribution": "WWS TractorUrsusC342driving, Work With Sounds / Museum of Municipal Engineering, sound recordist Monika Widzicka, CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/); downmixed, resampled and converted to PCM; source https://commons.wikimedia.org/wiki/File:WWS_TractorUrsusC342driving.ogg",
+      "commercial_use": true,
+      "share_alike": false,
+      "authenticity": "substitute",
+      "review_status": "pending"
     }
   ]
 }

@@ -15,3 +15,10 @@ WWS Containershipgantrycrane, Work With Sounds / Werstas, sound recordist Teemu 
 
 - Source: https://commons.wikimedia.org/wiki/File:WWS_Containershipgantrycrane.ogg
 - Licence: CC-BY-4.0 (https://creativecommons.org/licenses/by/4.0/); commercial use: True; share alike: False
+
+## vehicle-ursus-driving
+
+WWS TractorUrsusC342driving, Work With Sounds / Museum of Municipal Engineering, sound recordist Monika Widzicka, CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/); downmixed, resampled and converted to PCM; source https://commons.wikimedia.org/wiki/File:WWS_TractorUrsusC342driving.ogg
+
+- Source: https://commons.wikimedia.org/wiki/File:WWS_TractorUrsusC342driving.ogg
+- Licence: CC-BY-4.0 (https://creativecommons.org/licenses/by/4.0/); commercial use: True; share alike: False

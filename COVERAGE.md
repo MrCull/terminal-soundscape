@@ -1,13 +1,13 @@
 # Collection coverage
 
-Recordings: 2
-Total duration: 190.865 seconds
+Recordings: 3
+Total duration: 282.301 seconds
 
-- Licences: CC-BY-4.0: 2
-- Playback types: full-event: 2
-- Authenticity: authentic: 1, substitute: 1
-- Listening status: pending: 2
-- Events: container crane loading operation candidate: 1, crane movement candidate: 1
+- Licences: CC-BY-4.0: 3
+- Playback types: full-event: 3
+- Authenticity: authentic: 1, substitute: 2
+- Listening status: pending: 3
+- Events: container crane loading operation candidate: 1, crane movement candidate: 1, tractor movement candidate: 1
 
 Priority categories (reviewed and classified recordings only):
 - crane movement: gap ? no reviewed recording classified

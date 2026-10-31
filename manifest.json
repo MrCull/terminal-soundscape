@@ -70,6 +70,41 @@
       },
       "commercial_use": true,
       "share_alike": false
+    },
+    {
+      "id": "vehicle-ursus-driving",
+      "description": "Ursus C 342 agricultural tractor driving; unreviewed candidate substitute for terminal tractor movement.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:WWS_TractorUrsusC342driving.ogg",
+      "creator": "Work With Sounds / Museum of Municipal Engineering; sound recordist Monika Widzicka",
+      "license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "rights_evidence_url": "https://commons.wikimedia.org/w/index.php?title=File:WWS_TractorUrsusC342driving.ogg&oldid=978580515",
+      "rights_verified_date": "2026-10-31",
+      "attribution": "WWS TractorUrsusC342driving, Work With Sounds / Museum of Municipal Engineering, sound recordist Monika Widzicka, CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/); downmixed, resampled and converted to PCM; source https://commons.wikimedia.org/wiki/File:WWS_TractorUrsusC342driving.ogg",
+      "authenticity": "substitute",
+      "authenticity_evidence": "The source identifies an early-1960s Ursus C 342 light agricultural tractor prototype driving, not terminal equipment. Suitability as a terminal vehicle substitute is unverified.",
+      "event": "tractor movement candidate",
+      "priority_category": "carrier or tractor movement",
+      "playback": "full-event",
+      "playback_guidance": "Candidate for playback once at a vehicle point source after listening review. Do not loop without boundary review.",
+      "processing": "Original downloaded from https://commons.wikimedia.org/wiki/Special:Redirect/file/WWS_TractorUrsusC342driving.ogg; original SHA-256 18d879e54147e2a6e284d0c0c5a03dda0bc71ec99cf1b0498bb8f29d465a0acd. FFmpeg 7.1: ffmpeg -hide_banner -i tractor-driving.ogg -map 0:a:0 -ac 1 -ar 48000 -c:a pcm_s16le -n tractor-driving-ogg.wav. Decoded 44.1 kHz stereo Vorbis, downmixed to mono and resampled to 48 kHz 16-bit PCM; no trim or normalization. One derivative of one source.",
+      "quality_notes": "Lossy 107 kbps Ogg Vorbis source limits fidelity; mono downmix loses stereo information. Automated checks passed; perceptual quality and suitability remain unknown.",
+      "review_status": "pending",
+      "reviewer": "none",
+      "review_notes": "Listening unavailable: original and master require listening and suitability review; not release-ready. Loop boundaries have not been reviewed.",
+      "path": "audio/vehicle-ursus-driving.wav",
+      "source_sha256": "18d879e54147e2a6e284d0c0c5a03dda0bc71ec99cf1b0498bb8f29d465a0acd",
+      "sha256": "e68579e4a82cfda9f72f5d05d87ed960d543f3cccecf31b04258d7fdc8476d1a",
+      "audio": {
+        "sample_rate": 48000,
+        "channels": 1,
+        "bit_depth": 16,
+        "duration_seconds": 91.43583333333333,
+        "peak": 28038,
+        "clipped_samples": 0
+      },
+      "commercial_use": true,
+      "share_alike": false
     }
   ]
 }
