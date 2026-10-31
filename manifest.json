@@ -35,6 +35,41 @@
       "commercial_use": true,
       "share_alike": false,
       "priority_category": "crane movement"
+    },
+    {
+      "id": "crane-wws-containership",
+      "description": "Container ship gantry crane loading operation at Rauma; unreviewed full-recording candidate, with no verified contact event.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:WWS_Containershipgantrycrane.ogg",
+      "creator": "Work With Sounds / Werstas; sound recordist Teemu Ahola",
+      "license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "rights_evidence_url": "https://commons.wikimedia.org/w/index.php?title=File:WWS_Containershipgantrycrane.ogg&oldid=1132901326",
+      "rights_verified_date": "2026-10-31",
+      "attribution": "WWS Containershipgantrycrane, Work With Sounds / Werstas, sound recordist Teemu Ahola, CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/); converted and downmixed from Ogg Vorbis to mono PCM WAV; https://commons.wikimedia.org/wiki/File:WWS_Containershipgantrycrane.ogg",
+      "authenticity": "authentic",
+      "authenticity_evidence": "Item page describes a container ship gantry crane loading M/S Sandy Rickmers at Rauma. It does not identify a specific contact or landing in the recording.",
+      "event": "container crane loading operation candidate",
+      "playback": "full-event",
+      "playback_guidance": "Pending listening and suitability review. No specific contact time or isolated landing has been established; do not use as a contact one-shot on that assumption.",
+      "processing": "Original WWS_Containershipgantrycrane.ogg downloaded from https://commons.wikimedia.org/wiki/Special:Redirect/file/WWS_Containershipgantrycrane.ogg; SHA-256 4fe65a241f63091b6e7b7757b3feaf2e6df1b8eece18e9b57031d97e15aa5ff3. FFmpeg 7.1 essentials build: ffmpeg -hide_banner -i wws-contact.ogg -map 0:a:0 -ac 1 -ar 48000 -c:a pcm_s16le -n wws-contact.wav. Decoded stereo 96 kHz Vorbis, downmixed to mono and resampled to 48 kHz 16-bit PCM; no trimming or normalization. One derivative of one source.",
+      "quality_notes": "Lossy approximately 113 kbps Ogg Vorbis source limits fidelity. Automated checks found signal and no full-scale clipped samples; perceptual quality, downmix and suitability are unreviewed.",
+      "review_status": "pending",
+      "reviewer": "none",
+      "review_notes": "No listening available. Listen to original and converted recording, establish whether any usable contact is actually present and review any resulting edit. Not release-ready; loop boundaries unreviewed.",
+      "priority_category": "crane movement",
+      "path": "audio/crane-wws-containership.wav",
+      "source_sha256": "4fe65a241f63091b6e7b7757b3feaf2e6df1b8eece18e9b57031d97e15aa5ff3",
+      "sha256": "691d7df7ed8d6b9cc6558ba4e0f6b95a944ca200c4ee19d8dd7a44700c2ad4e9",
+      "audio": {
+        "sample_rate": 48000,
+        "channels": 1,
+        "bit_depth": 16,
+        "duration_seconds": 126.86933333333333,
+        "peak": 28939,
+        "clipped_samples": 0
+      },
+      "commercial_use": true,
+      "share_alike": false
     }
   ]
 }

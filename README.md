@@ -1,6 +1,6 @@
 ﻿# Terminal soundscape
 
-A collection of real-world sounds for terminal simulations. The current inventory contains one crane substitute candidate; it has not been listened to and is not release-ready. Research and blockers are recorded for [cranes](docs/research-crane.md), [container contact](docs/research-contact.md), [vehicles](docs/research-vehicle.md), [warnings](docs/research-warnings.md), and [reefer and harbour ambience](docs/research-ambience.md). No licence applies to the collection as a whole; check each item's terms, particularly non-commercial and share-alike restrictions.
+A collection of real-world sounds for terminal simulations. The current inventory contains two pending crane-operation candidates, including one substitute; neither has been listened to or is release-ready. Research and blockers are recorded for [cranes](docs/research-crane.md), [container contact](docs/research-contact.md), [vehicles](docs/research-vehicle.md), [warnings](docs/research-warnings.md), and [reefer and harbour ambience](docs/research-ambience.md). No licence applies to the collection as a whole; check each item's terms, particularly non-commercial and share-alike restrictions.
 
 ## Browser delivery
 
