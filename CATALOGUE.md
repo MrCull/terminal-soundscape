@@ -13,3 +13,15 @@ Steel-plant bridge crane recording; unreviewed candidate for a terminal crane su
 - Authenticity: substitute
 - Playback: full-event — Candidate for playback once at a crane point source after listening review; do not loop without boundary review.
 - Review: pending — No listening was available; original and converted recording need listening and suitability review. Not release-ready. Loop boundaries have not been reviewed.
+
+## crane-wws-containership
+
+Container ship gantry crane loading operation at Rauma; unreviewed full-recording candidate, with no verified contact event.
+
+- File: audio/crane-wws-containership.wav
+- Licence: CC-BY-4.0 (https://creativecommons.org/licenses/by/4.0/); commercial use: True; share alike: False
+- Attribution: WWS Containershipgantrycrane, Work With Sounds / Werstas, sound recordist Teemu Ahola, CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/); converted and downmixed from Ogg Vorbis to mono PCM WAV; https://commons.wikimedia.org/wiki/File:WWS_Containershipgantrycrane.ogg
+- Source: https://commons.wikimedia.org/wiki/File:WWS_Containershipgantrycrane.ogg
+- Authenticity: authentic
+- Playback: full-event — Pending listening and suitability review. No specific contact time or isolated landing has been established; do not use as a contact one-shot on that assumption.
+- Review: pending — No listening available. Listen to original and converted recording, establish whether any usable contact is actually present and review any resulting edit. Not release-ready; loop boundaries unreviewed.
