@@ -1,6 +1,6 @@
 # Terminal Soundscape
 
-An independently usable, traceable collection of real terminal and port audio for browser simulations. The inventory is early: one crane recording is present as an unauditioned candidate. It is **not release-ready**; no other category currently has audio.
+An independently usable, traceable collection of real terminal and port audio for browser simulations. The inventory currently contains five unauditioned audio candidates and one video reference. There are no release-ready or browser-ready files yet.
 
 ## Maintainer commands
 
@@ -12,11 +12,14 @@ python -m venv .venv
 # Linux/macOS: . .venv/bin/activate
 python -m pip install -e .
 soundscape validate manifest.json
+soundscape inspect assets/candidates/WWS_Mobileharbourcrane.ogg
+soundscape import path/to/recording.wav assets/candidates/new-recording.wav --dry-run
+soundscape import path/to/recording.wav assets/candidates/new-recording.wav
 soundscape catalogue manifest.json --dry-run
 soundscape catalogue manifest.json --output CATALOGUE.md
 ```
 
-Catalogue generation refuses to overwrite an existing output. Validation checks required manifest fields, unique IDs, collection-contained paths, file presence, SHA-256, and WAV properties when media is WAV. OGG/other decoding and clipping analysis are not implemented yet. Run local checks with `python -m unittest discover -s tests -v`.
+Catalogue generation refuses to overwrite an existing output. `import` only copies a local file beneath the collection root, rejects path escapes, and never overwrites. `inspect` reports file size and SHA-256, and uses FFprobe when installed for media properties (WAV has a Python standard-library fallback). Validation checks required manifest fields, unique IDs, collection-contained paths, file presence, SHA-256, WAV properties, rights metadata and the listener gate for release-ready items. OGG/other decoding validation and clipping analysis are not implemented yet. Run local checks with `python -m unittest discover -s tests -v`.
 
 ## Rights and review
 

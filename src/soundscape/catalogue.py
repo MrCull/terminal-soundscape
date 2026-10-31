@@ -3,6 +3,8 @@ import hashlib
 import json
 import math
 import wave
+import shutil
+import subprocess
 from pathlib import Path
 
 
@@ -25,6 +27,45 @@ def _asset_path(root: Path, value: str) -> Path:
     if not candidate.is_relative_to(root.resolve()):
         raise CollectionError(f"Asset path escapes collection: {value}")
     return candidate
+
+
+def import_media(source: Path, manifest_path: Path, destination: str, dry_run: bool = False) -> Path:
+    """Copy one local recording beneath the collection root without overwriting."""
+    root = manifest_path.resolve().parent
+    source = source.resolve(strict=True)
+    if not source.is_file():
+        raise CollectionError(f"Source is not a file: {source}")
+    target = _asset_path(root, destination)
+    if target.exists():
+        raise CollectionError(f"Refusing to overwrite existing file: {target}")
+    if not dry_run:
+        target.parent.mkdir(parents=True, exist_ok=True)
+        shutil.copy2(source, target)
+    return target
+
+
+def inspect_media(path: Path) -> dict:
+    """Return basic file/hash and, when available, ffprobe media properties."""
+    path = path.resolve(strict=True)
+    if not path.is_file():
+        raise CollectionError(f"Not a file: {path}")
+    result = {
+        "file": path.name,
+        "bytes": path.stat().st_size,
+        "sha256": hashlib.sha256(path.read_bytes()).hexdigest(),
+    }
+    ffprobe = shutil.which("ffprobe")
+    if ffprobe:
+        probe = subprocess.run(
+            [ffprobe, "-v", "error", "-show_entries", "format=duration,format_name", "-show_entries", "stream=codec_name,codec_type,sample_rate,channels,width,height", "-of", "json", str(path)],
+            check=False, capture_output=True, text=True,
+        )
+        if probe.returncode == 0:
+            result["ffprobe"] = json.loads(probe.stdout)
+    elif path.suffix.lower() == ".wav":
+        with wave.open(str(path), "rb") as wav:
+            result["audio"] = {"duration_seconds": wav.getnframes() / wav.getframerate(), "sample_rate_hz": wav.getframerate(), "channels": wav.getnchannels(), "sample_width_bytes": wav.getsampwidth()}
+    return result
 
 
 def validate(manifest_path: Path) -> list[str]:

@@ -5,7 +5,7 @@ import unittest
 import wave
 from pathlib import Path
 
-from soundscape.catalogue import render_catalogue, validate
+from soundscape.catalogue import CollectionError, import_media, inspect_media, render_catalogue, validate
 
 
 class CollectionCommandsTest(unittest.TestCase):
@@ -75,6 +75,45 @@ class CollectionCommandsTest(unittest.TestCase):
             report = render_catalogue(manifest)
             self.assertIn("Share-alike", report)
             self.assertIn("True", report)
+
+    def test_import_dry_run_does_not_write_and_import_refuses_overwrite(self):
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            manifest = root / "manifest.json"
+            manifest.write_text('{"schema_version":1,"assets":[]}', encoding="utf-8")
+            source = root / "source.ogg"
+            source.write_bytes(b"fixture")
+            target = import_media(source, manifest, "assets/candidates/source.ogg", dry_run=True)
+            self.assertFalse(target.exists())
+            target = import_media(source, manifest, "assets/candidates/source.ogg")
+            self.assertEqual(target.read_bytes(), b"fixture")
+            with self.assertRaisesRegex(CollectionError, "Refusing to overwrite"):
+                import_media(source, manifest, "assets/candidates/source.ogg")
+
+    def test_import_rejects_destination_outside_collection(self):
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            manifest = root / "manifest.json"
+            manifest.write_text('{"schema_version":1,"assets":[]}', encoding="utf-8")
+            source = root / "source.ogg"
+            source.write_bytes(b"fixture")
+            with self.assertRaisesRegex(CollectionError, "escapes collection"):
+                import_media(source, manifest, "../outside.ogg", dry_run=True)
+
+    def test_inspection_reports_hash_and_wav_properties(self):
+        with tempfile.TemporaryDirectory() as directory:
+            audio = Path(directory) / "sample.wav"
+            with wave.open(str(audio), "wb") as wav:
+                wav.setnchannels(1)
+                wav.setsampwidth(2)
+                wav.setframerate(48000)
+                wav.writeframes(b"\0\0" * 480)
+            result = inspect_media(audio)
+            self.assertEqual(result["bytes"], audio.stat().st_size)
+            if "ffprobe" in result:
+                self.assertEqual(result["ffprobe"]["streams"][0]["sample_rate"], "48000")
+            else:
+                self.assertEqual(result["audio"]["sample_rate_hz"], 48000)
 
 
 if __name__ == "__main__":
