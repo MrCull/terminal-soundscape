@@ -1,4 +1,4 @@
-import json
+﻿import json
 import subprocess
 import sys
 import tempfile
@@ -62,6 +62,42 @@ class Commands(unittest.TestCase):
             self.assertNotEqual(result.returncode, 0)
             self.assertIn('unsafe path', result.stderr)
 
+    def test_empty_catalogue_reports_gaps_and_dry_run_does_not_write(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            self.assertEqual(run('catalogue', '--root', root, '--dry-run').returncode, 0)
+            self.assertFalse((root / 'browser.json').exists())
+            self.assertEqual(run('catalogue', '--root', root).returncode, 0)
+            self.assertEqual(json.loads((root / 'browser.json').read_text())['assets'], [])
+            coverage = (root / 'COVERAGE.md').read_text(encoding='utf-8')
+            self.assertIn('Recordings: 0', coverage)
+            self.assertIn('All six priority categories are gaps', coverage)
+
+    def test_catalogue_generates_browser_mapping_and_reports_for_pending_asset(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            metadata = {'id':'crane-1', 'description':'Bridge crane', 'source_url':'https://example.org/item', 'creator':'Recorder', 'license':'CC-BY-NC-SA-4.0', 'license_url':'https://creativecommons.org/licenses/by-nc-sa/4.0/', 'rights_evidence_url':'https://example.org/item', 'rights_verified_date':'2026-10-31', 'attribution':'Recorder, Bridge crane', 'authenticity':'substitute', 'authenticity_evidence':'source description', 'event':'crane movement', 'playback':'full-event', 'playback_guidance':'Play once', 'processing':'None', 'quality_notes':'fixture', 'review_status':'pending', 'reviewer':'none', 'review_notes':'Not listened'}
+            meta = root / 'metadata.json'
+            meta.write_text(json.dumps(metadata))
+            self.assertEqual(run('import', fixture(root), meta, '--root', root).returncode, 0)
+            result = run('catalogue', '--root', root)
+            self.assertEqual(result.returncode, 0, result.stderr)
+            mapping = json.loads((root / 'browser.json').read_text())
+            self.assertEqual(mapping['assets'][0]['path'], 'audio/crane-1.wav')
+            self.assertEqual(mapping['assets'][0]['event'], 'crane movement')
+            self.assertEqual(mapping['assets'][0]['review_status'], 'pending')
+            self.assertFalse(mapping['assets'][0]['commercial_use'])
+            self.assertTrue(mapping['assets'][0]['share_alike'])
+            attribution = (root / 'ATTRIBUTION.md').read_text(encoding='utf-8')
+            coverage = (root / 'COVERAGE.md').read_text(encoding='utf-8')
+            self.assertIn('Recorder, Bridge crane', attribution)
+            self.assertIn('CC-BY-NC-SA-4.0', attribution)
+            self.assertIn('pending', coverage)
+            self.assertIn('substitute', coverage)
+            self.assertIn('0.1', coverage)
+
+
 if __name__ == '__main__':
     unittest.main()
+
 

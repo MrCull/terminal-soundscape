@@ -3,6 +3,7 @@ import hashlib
 import json
 import sys
 import wave
+from collections import Counter
 from pathlib import Path
 
 LICENSES = {'CC0-1.0': (True, False), 'CC-BY-4.0': (True, False),
@@ -100,7 +101,33 @@ def main():
         lines.extend([f"## {m['id']}", '', m['description'], '', f"- File: {m['path']}", f"- Licence: {m['license']} ({m['license_url']}); commercial use: {m['commercial_use']}; share alike: {m['share_alike']}", f"- Attribution: {m['attribution']}", f"- Source: {m['source_url']}", f"- Authenticity: {m['authenticity']}", f"- Playback: {m['playback']} — {m['playback_guidance']}", f"- Review: {m['review_status']} — {m['review_notes']}", ''])
     if not manifest['assets']: lines += ['No recordings are currently in the collection.', '']
     output = '\n'.join(lines)
-    if not args.dry_run: (root / 'CATALOGUE.md').write_text(output, encoding='utf-8')
+    assets = manifest['assets']
+    mapping = {'version': 1, 'assets': [
+        {k: m[k] for k in ('id', 'path', 'event', 'playback', 'playback_guidance',
+                            'audio', 'license', 'license_url', 'attribution',
+                            'commercial_use', 'share_alike', 'authenticity', 'review_status')}
+        for m in assets]}
+    attribution = ['# Attribution', '', 'Check each licence before distribution. Non-commercial and share-alike restrictions apply where marked.', '']
+    for m in assets:
+        attribution.extend([f"## {m['id']}", '', m['attribution'], '',
+                            f"- Source: {m['source_url']}",
+                            f"- Licence: {m['license']} ({m['license_url']}); commercial use: {m['commercial_use']}; share alike: {m['share_alike']}", ''])
+    if not assets: attribution += ['No recordings are currently in the collection.', '']
+    coverage = ['# Collection coverage', '', f"Recordings: {len(assets)}",
+                f"Total duration: {sum(m['audio']['duration_seconds'] for m in assets):g} seconds", '']
+    for label, key in (('Licences', 'license'), ('Playback types', 'playback'),
+                       ('Authenticity', 'authenticity'), ('Listening status', 'review_status'),
+                       ('Events', 'event')):
+        counts = Counter(m[key] for m in assets)
+        coverage.append(f"- {label}: " + (', '.join(f'{k}: {v}' for k, v in sorted(counts.items())) or 'none'))
+    coverage += ['', 'Priority coverage requires reviewed, suitable recordings for crane movement, container contact, carrier or tractor movement, terminal warnings, reefer ambience and harbour ambience. Check the event list and individual reviews against these priorities; free-text events are not automatically classified.', '']
+    if not assets:
+        coverage += ['All six priority categories are gaps; no recordings have been listened to.', '']
+    if not args.dry_run:
+        for name, content in (('CATALOGUE.md', output), ('ATTRIBUTION.md', '\n'.join(attribution)),
+                              ('COVERAGE.md', '\n'.join(coverage)),
+                              ('browser.json', json.dumps(mapping, indent=2, ensure_ascii=False) + '\n')):
+            (root / name).write_text(content, encoding='utf-8')
     print(output)
 
 if __name__ == '__main__':

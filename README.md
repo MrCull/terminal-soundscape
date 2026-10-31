@@ -1,6 +1,12 @@
 ﻿# Terminal soundscape
 
-A collection of real-world sounds for terminal simulations. The current inventory is **empty**: no recordings are reviewed or release-ready. See [crane research](docs/research-crane.md) and [warning research](docs/research-warnings.md) for candidates and blockers. No licence applies to the collection as a whole; check each item's terms, particularly non-commercial and share-alike restrictions.
+A collection of real-world sounds for terminal simulations. The current inventory is **empty**: no recordings are reviewed or release-ready. Research and blockers are recorded for [cranes](docs/research-crane.md), [container contact](docs/research-contact.md), [vehicles](docs/research-vehicle.md), [warnings](docs/research-warnings.md), and [reefer and harbour ambience](docs/research-ambience.md). No licence applies to the collection as a whole; check each item's terms, particularly non-commercial and share-alike restrictions.
+
+## Browser delivery
+
+Run `python soundscape.py catalogue` after validating or changing the inventory. It validates the masters and generates [browser.json](browser.json), [CATALOGUE.md](CATALOGUE.md), [ATTRIBUTION.md](ATTRIBUTION.md), and [COVERAGE.md](COVERAGE.md). The mapping includes pending assets for inspection, not as an assertion of release readiness. Filter `review_status` for `reviewed`, and check per-item `commercial_use`, `share_alike`, attribution and licence before shipping. An empty mapping means no sounds are available. The report lists events as supplied by contributors; assess their suitability for each priority category manually.
+
+Serve the repository over HTTP, fetch `browser.json`, and resolve each `path` relative to that file. The 48 kHz 16-bit PCM WAV masters are the browser delivery files; browsers can decode them with Web Audio's `decodeAudioData` or play them with an audio element. Respect browser autoplay rules by starting audio after a user gesture. Use the event and playback fields to select an asset: one-shots and full events play once; loop only recordings reviewed at their boundaries. Follow each asset's playback guidance. Use mono sources with a Web Audio `PannerNode` (or Three.js positional audio) for point sources, and stereo ambience without positional panning. Start with conservative gain and distance attenuation, then tune against the scene scale and real equipment; no universal distances are asserted. Avoid stacking an unbounded number of simultaneous sounds.
 
 ## Setup and commands
 
@@ -16,7 +22,7 @@ python soundscape.py catalogue --dry-run
 python soundscape.py catalogue
 ```
 
-Use `--root PATH` on import, validate and catalogue to operate on another collection. Import refuses an existing ID or destination; dry runs do not write. Catalogue validates before writing and regenerates `CATALOGUE.md`. Back up existing reports before regeneration. Use only trusted local files; do not execute source downloads. The WAV reader checks 16-bit PCM, 48 kHz, mono/stereo, non-silence, and clipping at full scale. A passing check is not a listening review. `inspect` accepts other PCM sample rates for diagnosis. No conversion is implemented: prepare WAVs separately with a trusted tool such as FFmpeg, record exact commands and hashes in metadata, and preserve the source separately. Import records the hash of the supplied prepared WAV as both `source_sha256` and `sha256`; original download hashes must be recorded in `processing` until the manifest supports a separate original-source field.
+Use `--root PATH` on import, validate and catalogue to operate on another collection. Import refuses an existing ID or destination; dry runs do not write. Catalogue validates before regenerating the four files above. Back up existing reports before regeneration. Use only trusted local files; do not execute source downloads. The WAV reader checks 16-bit PCM, 48 kHz, mono/stereo, non-silence, and clipping at full scale. A passing check is not a listening review. `inspect` accepts other PCM sample rates for diagnosis. No conversion is implemented: prepare WAVs separately with a trusted tool such as FFmpeg, record exact commands and hashes in metadata, and preserve the source separately. Import records the hash of the supplied prepared WAV as both `source_sha256` and `sha256`; original download hashes must be recorded in `processing` until the manifest supports a separate original-source field.
 
 ## Contribution and review
 
