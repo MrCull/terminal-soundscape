@@ -1,0 +1,9 @@
+﻿# Crane candidate research
+
+Checked 2026-10-31. The inventory contains zero files, zero seconds, and no licences, playback types, or reviewed recordings. Crane, contact, vehicle, warning, reefer and harbour categories remain gaps.
+
+- **Candidate:** [WWS Crane.ogg](https://commons.wikimedia.org/wiki/File:WWS_Crane.ogg), Work With Sounds / Technical Museum of Slovenia, recordist Dušan Oblak. The item page describes a five-ton bridge crane at a steel plant, and states CC BY 4.0 with attribution, licence link, and changes indicated. Wikimedia lists a rights-holder permission ticket. This is a plausible industrial substitute, not evidence of a container crane or a specific terminal action. The item page reports 63.996 seconds of Ogg Vorbis at 62 kbps, so fidelity is limited. The original was downloaded successfully, but remains outside the repository pending review and preparation. No listening was possible in this environment, and FFmpeg/ffprobe were not installed on PATH. A reviewer must listen to the original and any master, decide whether it is suitable, prepare a 48 kHz PCM master, and document the actual processing and hashes before acceptance. Do not loop without reviewing the boundary.
+- **Candidate requiring account:** [Crane, Noises 06](https://freesound.org/people/LilMati/sounds/396355/) by LilMati. Its item page states CC0 and describes an active crane, but original download requires login. Not downloaded or auditioned; precise crane and operational context remain uncertain.
+- **Rejected:** [toy wooden crane noise](https://freesound.org/people/itinerantmonk108/sounds/557268/) is explicitly a toy, not a useful real terminal machine recording.
+
+The [WWS item description](https://commons.wikimedia.org/wiki/File:WWS_Crane.ogg) explains that its bridge crane lifts and transports chained loads. That describes the recorded equipment, not proof of operating sounds or alarm practice at a container terminal. No alarm guidance is inferred.
