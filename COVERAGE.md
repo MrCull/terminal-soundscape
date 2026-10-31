@@ -9,4 +9,12 @@ Total duration: 63.996 seconds
 - Listening status: pending: 1
 - Events: crane movement candidate: 1
 
-Priority coverage requires reviewed, suitable recordings for crane movement, container contact, carrier or tractor movement, terminal warnings, reefer ambience and harbour ambience. Check the event list and individual reviews against these priorities; free-text events are not automatically classified.
+Priority categories (reviewed and classified recordings only):
+- crane movement: gap ? no reviewed recording classified
+- container contact: gap ? no reviewed recording classified
+- carrier or tractor movement: gap ? no reviewed recording classified
+- terminal warnings: gap ? no reviewed recording classified
+- reefer ambience: gap ? no reviewed recording classified
+- harbour ambience: gap ? no reviewed recording classified
+
+Classification is a contributor assertion; check suitability and reviews before use.

@@ -16,13 +16,13 @@
       "event": "crane movement candidate",
       "playback": "full-event",
       "playback_guidance": "Candidate for playback once at a crane point source after listening review; do not loop without boundary review.",
-      "processing": "Original WWS_Crane.ogg downloaded from https://commons.wikimedia.org/wiki/Special:Redirect/file/WWS_Crane.ogg; original SHA-256 0b673f3560432af138236c00c1f1bf7616f77e01af9f7c094d58466bd59e2d67. FFmpeg 7.1 essentials build: ffmpeg -hide_banner -i WWS_Crane.ogg -map 0:a:0 -ac 1 -ar 48000 -c:a pcm_s16le -n crane.wav. Source already mono 48000 Hz; decoded Vorbis to 16-bit PCM, no trimming or normalization. This is one derivative of one source; source_sha256 field records the prepared WAV supplied to import.",
+      "processing": "Original WWS_Crane.ogg downloaded from https://commons.wikimedia.org/wiki/Special:Redirect/file/WWS_Crane.ogg; original SHA-256 0b673f3560432af138236c00c1f1bf7616f77e01af9f7c094d58466bd59e2d67. FFmpeg 7.1 essentials build: ffmpeg -hide_banner -i WWS_Crane.ogg -map 0:a:0 -ac 1 -ar 48000 -c:a pcm_s16le -n crane.wav. Source already mono 48000 Hz; decoded Vorbis to 16-bit PCM, no trimming or normalization. This is one derivative of one source; source_sha256 records the original Ogg download.",
       "quality_notes": "Lossy 62 kbps Ogg Vorbis source limits fidelity. Automated PCM checks passed; perceptual quality and suitability remain unknown.",
       "review_status": "pending",
       "reviewer": "none",
       "review_notes": "No listening was available; original and converted recording need listening and suitability review. Not release-ready. Loop boundaries have not been reviewed.",
       "path": "audio/crane-wws-bridge.wav",
-      "source_sha256": "856b519b4f8e286a04a9b994cb84f806420116622d6a1bab95924eac5689a69f",
+      "source_sha256": "0b673f3560432af138236c00c1f1bf7616f77e01af9f7c094d58466bd59e2d67",
       "sha256": "856b519b4f8e286a04a9b994cb84f806420116622d6a1bab95924eac5689a69f",
       "audio": {
         "sample_rate": 48000,
@@ -33,7 +33,8 @@
         "clipped_samples": 0
       },
       "commercial_use": true,
-      "share_alike": false
+      "share_alike": false,
+      "priority_category": "crane movement"
     }
   ]
 }
