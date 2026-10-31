@@ -10,3 +10,17 @@ framework, or package manager.
 - Add or update tests when appropriate, and run the checks relevant to changes.
 - Document new setup requirements and commands as the project develops.
 - Do not commit credentials or generated dependencies.
+
+## Agent skills
+
+### Issue tracker
+
+Issues and specs live in GitHub Issues; use the `gh` CLI. See `docs/agents/issue-tracker.md`.
+
+### Triage labels
+
+Use `needs-triage`, `needs-info`, `ready-for-agent`, `ready-for-human`, and `wontfix`. See `docs/agents/triage-labels.md`.
+
+### Domain docs
+
+Single-context: `GLOSSARY.md` and `docs/adr/`. See `docs/agents/domain.md`.
