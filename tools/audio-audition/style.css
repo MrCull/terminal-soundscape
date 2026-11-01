@@ -26,6 +26,9 @@ button:hover { border-color: var(--accent); }
 .card h2 { margin: 0; font-size: 1.15rem; overflow-wrap: anywhere; }
 .meta { color: color-mix(in srgb, CanvasText 75%, Canvas); font-size: .9rem; }
 .description { margin: .4rem 0 .8rem; }
+.model-hint { padding: .55rem .7rem; border-left: 3px solid #aa8a27; background: var(--soft); font-size: .9rem; }
+.windows { display: flex; flex-wrap: wrap; gap: .4rem; margin: .5rem 0 .8rem; }
+.windows button { font-size: .8rem; }
 .player { display: flex; flex-wrap: wrap; align-items: center; gap: .5rem; margin: .7rem 0 1rem; }
 .player audio { width: min(100%, 560px); }
 .player select { max-width: 360px; }

@@ -30,18 +30,21 @@ function option(value, label) {
 
 async function load() {
   try {
-    const [currentResponse, firstResponse, previewResponse] = await Promise.all([
+    const [currentResponse, firstResponse, previewResponse, tagsResponse] = await Promise.all([
       fetch("/manifest.json"),
       fetch("/first-collection/manifest.json"),
-      fetch("/first-collection/browser-previews/preview-manifest.json")
+      fetch("/first-collection/browser-previews/preview-manifest.json"),
+      fetch("/docs/generated/audio-event-tags.json")
     ]);
     if (![currentResponse, firstResponse, previewResponse].every(response => response.ok)) {
       throw new Error("Could not read the repository manifests. Start the server from the repository root.");
     }
-    const [current, first, firstPreviews] = await Promise.all([
-      currentResponse.json(), firstResponse.json(), previewResponse.json()
+    const [current, first, firstPreviews, tagReport] = await Promise.all([
+      currentResponse.json(), firstResponse.json(), previewResponse.json(),
+      tagsResponse.ok ? tagsResponse.json() : Promise.resolve({ assets: [] })
     ]);
     const firstPreviewById = new Map(firstPreviews.assets.map(item => [item.asset_id, item.file]));
+    const tagsByFile = new Map(tagReport.assets.map(item => [item.file, item.analysis]));
     recordings = [
       ...current.assets.map(asset => ({
         key: `current:${asset.id}`,
@@ -53,6 +56,7 @@ async function load() {
         category: asset.category || "uncategorized",
         source: asset.file,
         previews: (asset.derivatives || []).map(item => item.file),
+        analysis: tagsByFile.get(asset.file),
         license: asset.license || "unknown"
       })),
       ...first.assets.map(asset => ({
@@ -65,6 +69,7 @@ async function load() {
         category: asset.priority_category || asset.event || "uncategorized",
         source: `first-collection/${asset.path}`,
         previews: firstPreviewById.has(asset.id) ? [firstPreviewById.get(asset.id)] : [],
+        analysis: tagsByFile.get(`first-collection/${asset.path}`),
         license: asset.license || "unknown"
       }))
     ];
@@ -127,6 +132,25 @@ function buildCard(item) {
     playerRow.append(select);
   }
   card.append(playerRow);
+
+  if (item.analysis) {
+    const tags = item.analysis.top_tags_by_mean_score.slice(0, 5)
+      .map(tag => `${tag.label} ${tag.score.toFixed(2)}`).join(" · ");
+    card.append(node("p", `Automated YAMNet suggestions (unverified): ${tags}`, "model-hint"));
+    const windows = node("div", undefined, "windows");
+    for (const window of item.analysis.highest_scoring_windows.slice(0, 5)) {
+      const seek = node("button", `${window.start_seconds.toFixed(0)}s · ${window.label} ${window.score.toFixed(2)}`);
+      seek.type = "button";
+      seek.title = "Seek the player to this classifier-highlighted time; it will not start playback.";
+      seek.addEventListener("click", () => {
+        const setPosition = () => { player.currentTime = window.start_seconds; };
+        if (player.readyState === 0) player.addEventListener("loadedmetadata", setPosition, { once: true });
+        else setPosition();
+      });
+      windows.append(seek);
+    }
+    card.append(windows);
+  }
 
   const fields = node("div", undefined, "fields");
   const disposition = makeField("Your assessment", "select", saved.disposition, "", [

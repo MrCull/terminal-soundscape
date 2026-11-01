@@ -174,3 +174,5 @@ For the 18 first-collection previews, FFmpeg encoded each WAV master to MP3 usin
 - These are automated integrity checks only. No recording has been marked auditioned, and they do not establish acoustic quality, event identity, suitability, or loop boundaries.
 
 For human listening and note capture, use the [local audio audition tool](../tools/audio-audition/README.md).
+
+For automated local sound-event suggestions, see the [YAMNet tag report](audio-event-tags.md) and its [setup and limitations](../tools/audio-tagging/README.md).
