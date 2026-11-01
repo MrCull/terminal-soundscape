@@ -36,7 +36,7 @@ def sha(path):
 
 
 def load(root):
-    path = root / 'manifest.first-collection.json'
+    path = root / 'manifest.json'
     return json.loads(path.read_text(encoding='utf-8-sig')) if path.exists() else {'version': 1, 'assets': []}
 
 
@@ -107,9 +107,9 @@ def main():
     parser = argparse.ArgumentParser()
     sub = parser.add_subparsers(dest='command', required=True)
     p = sub.add_parser('inspect'); p.add_argument('path')
-    p = sub.add_parser('import'); p.add_argument('source'); p.add_argument('metadata'); p.add_argument('--root', default='.'); p.add_argument('--dry-run', action='store_true'); p.add_argument('--original-source', required=True)
+    p = sub.add_parser('import'); p.add_argument('source'); p.add_argument('metadata'); p.add_argument('--root', default='first-collection'); p.add_argument('--dry-run', action='store_true'); p.add_argument('--original-source', required=True)
     for cmd in ('validate', 'catalogue'):
-        p = sub.add_parser(cmd); p.add_argument('--root', default='.'); p.add_argument('--dry-run', action='store_true')
+        p = sub.add_parser(cmd); p.add_argument('--root', default='first-collection'); p.add_argument('--dry-run', action='store_true')
     sub.choices['catalogue'].add_argument('--overwrite', action='store_true')
     args = parser.parse_args()
     if args.command == 'inspect':

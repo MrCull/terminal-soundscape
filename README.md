@@ -34,6 +34,11 @@ See [docs/collection-status.md](docs/collection-status.md) for current inventory
 Generated reports currently live in [`docs/generated/`](docs/generated/): catalogue, attribution, coverage, and provisional candidate mapping. Rebuild catalogue with the `catalogue` command; rebuild the other reports with `reports`.
 
 
-## First collection WAV set
+## Repository layout
 
-The separately maintained first collection from the `integration/first-collection` branch is also included. It contains 18 WAV recordings and uses its own metadata format in [`manifest.first-collection.json`](manifest.first-collection.json), with its original workflow documented in [`docs/first-collection-README.md`](docs/first-collection-README.md). Run its standalone commands with `python soundscape.py validate` or `python soundscape.py catalogue`; this keeps its 48 kHz WAV masters and generated reports separate from the current Ogg candidate inventory.
+- `src/soundscape/` and `tests/` contain the current Python package and its tests.
+- `assets/candidates/` stores source audio candidates; `assets/browser-candidates/` stores unreviewed MP3 previews.
+- `manifest.json` is the current inventory. `docs/` contains collection guidance, research, status, and current generated reports.
+- `first-collection/` keeps the earlier 18-recording WAV collection self-contained, including its own manifest, validation tool, reports, research, and tests. Start with [`first-collection/docs/README.md`](first-collection/docs/README.md).
+
+The two collections use different manifest schemas. The first collection's script defaults to `first-collection/manifest.json` and writes reports inside `first-collection/`; its WAV files remain under `first-collection/audio/`.
