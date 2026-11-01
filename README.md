@@ -40,5 +40,6 @@ Generated reports currently live in [`docs/generated/`](docs/generated/): catalo
 - `assets/candidates/` stores source audio candidates; `assets/browser-candidates/` stores unreviewed MP3 previews.
 - `manifest.json` is the current inventory. `docs/` contains collection guidance, research, status, and current generated reports.
 - `first-collection/` keeps the earlier 18-recording WAV collection self-contained, including its own manifest, validation tool, reports, research, tests, and separate MP3 previews. Start with [`first-collection/docs/README.md`](first-collection/docs/README.md).
+- [`tools/audio-audition/`](tools/audio-audition/README.md) provides a local browser player and human listening-note export for both collections.
 
 The two collections use different manifest schemas. The first collection's script defaults to `first-collection/manifest.json` and writes reports inside `first-collection/`; its WAV files remain under `first-collection/audio/`.

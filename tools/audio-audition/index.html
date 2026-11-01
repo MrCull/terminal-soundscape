@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Terminal Soundscape audio review</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+    <header>
+      <p class="eyebrow">Local audio review</p>
+      <h1>Terminal Soundscape</h1>
+      <p>Play each recording in your browser and record what you hear. Your notes stay in this browser until you export them.</p>
+      <p class="notice">This tool does not update either manifest or mark files release-ready. It does not send audio or notes anywhere.</p>
+    </header>
+
+    <section class="toolbar" aria-label="Review controls">
+      <label>Search<input id="search" type="search" placeholder="Title, filename, or category"></label>
+      <label>Collection<select id="collection"><option value="all">All collections</option><option value="current">Current collection</option><option value="first">First collection</option></select></label>
+      <label>Notes state<select id="state"><option value="all">All recordings</option><option value="empty">No saved notes</option><option value="notes">Has saved notes</option></select></label>
+      <button id="export" type="button">Export review notes</button>
+    </section>
+
+    <p id="summary" role="status">Loading manifests…</p>
+    <section id="recordings" aria-live="polite"></section>
+    <p id="error" role="alert"></p>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>

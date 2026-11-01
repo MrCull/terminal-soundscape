@@ -172,3 +172,5 @@ For the 18 first-collection previews, FFmpeg encoded each WAV master to MP3 usin
 - The first-collection validator passed all 18 WAV manifest entries, including source hashes and PCM audio checks.
 - All 24 MP3 previews passed SHA-256 comparison against their manifests and decoded fully with FFmpeg (18 new previews and six existing previews).
 - These are automated integrity checks only. No recording has been marked auditioned, and they do not establish acoustic quality, event identity, suitability, or loop boundaries.
+
+For human listening and note capture, use the [local audio audition tool](../tools/audio-audition/README.md).
