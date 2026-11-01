@@ -1,0 +1,78 @@
+{
+  "schema_version": 1,
+  "audio_candidate_count": 106,
+  "release_ready_count": 0,
+  "browser_ready_count": 0,
+  "browser_compatible_preview_count": 6,
+  "duration_seconds": 22286.852,
+  "commercial_use_allowed_count": 106,
+  "share_alike_count": 1,
+  "unauditioned_count": 106,
+  "categories": {
+    "crane_hoist_movement": {
+      "manifest_categories": [
+        "crane_movement"
+      ],
+      "candidate_count": 2,
+      "release_ready_count": 0,
+      "duration_seconds": 175.41733299999999
+    },
+    "container_contact_placement": {
+      "manifest_categories": [
+        "container_contact_placement"
+      ],
+      "candidate_count": 0,
+      "release_ready_count": 0,
+      "duration_seconds": 0.0
+    },
+    "carrier_tractor_movement": {
+      "manifest_categories": [
+        "carrier_movement"
+      ],
+      "candidate_count": 1,
+      "release_ready_count": 0,
+      "duration_seconds": 91.091333
+    },
+    "terminal_warnings": {
+      "manifest_categories": [
+        "terminal_warning_candidate"
+      ],
+      "candidate_count": 1,
+      "release_ready_count": 0,
+      "duration_seconds": 189.595283
+    },
+    "reefer_ambience": {
+      "manifest_categories": [
+        "reefer_ambience"
+      ],
+      "candidate_count": 0,
+      "release_ready_count": 0,
+      "duration_seconds": 0.0
+    },
+    "harbour_ambience": {
+      "manifest_categories": [
+        "harbour_ambience"
+      ],
+      "candidate_count": 1,
+      "release_ready_count": 0,
+      "duration_seconds": 95.944853
+    },
+    "port_harbour_soundscapes": {
+      "manifest_categories": [
+        "port_harbour_soundscape"
+      ],
+      "candidate_count": 92,
+      "release_ready_count": 0,
+      "duration_seconds": 19097.574427000007
+    },
+    "terminal_cargo_port_candidates": {
+      "manifest_categories": [
+        "terminal_or_cargo_port_candidate"
+      ],
+      "candidate_count": 8,
+      "release_ready_count": 0,
+      "duration_seconds": 2206.880508
+    }
+  },
+  "note": "Counts reflect manifest entries, including unauditioned candidates. Candidates are not release-ready or browser-ready."
+}

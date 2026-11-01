@@ -1,0 +1,234 @@
+{
+  "schema_version": 1,
+  "status": "preview_only_not_release_ready",
+  "assets": [
+    {
+      "asset_id": "mobile-harbour-crane-candidate-01",
+      "file": "assets/browser-candidates/mobile-harbour-crane-candidate-01.mp3",
+      "source_file": "assets/candidates/WWS_Mobileharbourcrane.ogg",
+      "source_sha256": "34b4562f52d2d752be3e55845208e9d118146f7202a77853a04484630785b0a5",
+      "sha256": "012a3586587715df0e6ab09901e14c53350275a906d5719c332660955484976a",
+      "license": "CC BY 4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "attribution": "Teemu Ahola / Work With Sounds / Werstas, WWS Mobileharbourcrane.ogg, CC BY 4.0, https://commons.wikimedia.org/wiki/File:WWS_Mobileharbourcrane.ogg. Changes: downloaded from Wikimedia Commons; no audio processing.",
+      "commercial_use": "allowed",
+      "share_alike": false,
+      "codec": "MP3",
+      "browser_compatible_preview": true,
+      "review_status": "preview_not_auditioned",
+      "release_ready": false,
+      "processing": "FFmpeg libmp3lame, 192 kbit/s CBR; metadata stripped; no normalization or fades.",
+      "media_info": {
+        "file": "mobile-harbour-crane-candidate-01.mp3",
+        "bytes": 1166444,
+        "sha256": "012a3586587715df0e6ab09901e14c53350275a906d5719c332660955484976a",
+        "ffprobe": {
+          "programs": [],
+          "stream_groups": [],
+          "streams": [
+            {
+              "codec_name": "mp3",
+              "codec_type": "audio",
+              "sample_rate": "48000",
+              "channels": 2
+            }
+          ],
+          "format": {
+            "format_name": "mp3",
+            "duration": "48.576000"
+          }
+        }
+      }
+    },
+    {
+      "asset_id": "container-gantry-crane-candidate-01",
+      "file": "assets/browser-candidates/container-gantry-crane-candidate-01.mp3",
+      "source_file": "assets/candidates/WWS_Containershipgantrycrane.ogg",
+      "source_sha256": "4fe65a241f63091b6e7b7757b3feaf2e6df1b8eece18e9b57031d97e15aa5ff3",
+      "sha256": "191b76a399a559b48e4eb6b185f1390406abb16cbbdeb8bff389257c636d02d8",
+      "license": "CC BY 4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "attribution": "Teemu Ahola / Work With Sounds / Werstas, WWS Containershipgantrycrane.ogg, CC BY 4.0, https://commons.wikimedia.org/wiki/File:WWS_Containershipgantrycrane.ogg. Changes: downloaded from Wikimedia Commons; no audio processing.",
+      "commercial_use": "allowed",
+      "share_alike": false,
+      "codec": "MP3",
+      "browser_compatible_preview": true,
+      "review_status": "preview_not_auditioned",
+      "release_ready": false,
+      "processing": "FFmpeg libmp3lame, 192 kbit/s CBR; metadata stripped; no normalization or fades.",
+      "media_info": {
+        "file": "container-gantry-crane-candidate-01.mp3",
+        "bytes": 3046508,
+        "sha256": "191b76a399a559b48e4eb6b185f1390406abb16cbbdeb8bff389257c636d02d8",
+        "ffprobe": {
+          "programs": [],
+          "stream_groups": [],
+          "streams": [
+            {
+              "codec_name": "mp3",
+              "codec_type": "audio",
+              "sample_rate": "48000",
+              "channels": 2
+            }
+          ],
+          "format": {
+            "format_name": "mp3",
+            "duration": "126.912000"
+          }
+        }
+      }
+    },
+    {
+      "asset_id": "rotterdam-harbour-ambience-candidate-01",
+      "file": "assets/browser-candidates/rotterdam-harbour-ambience-candidate-01.mp3",
+      "source_file": "assets/candidates/Rotterdam_harbour_area_ambience.ogg",
+      "source_sha256": "6bba629b8aa4b2c9a8a3b34dd7e9a1ee6a5e6c18f2d88eda08739cc25eacee01",
+      "sha256": "8661ffe7ee1d4a17104364912db98184542cc6359aba014e5793316921c0684d",
+      "license": "CC BY 3.0",
+      "license_url": "https://creativecommons.org/licenses/by/3.0/",
+      "attribution": "Robin Koek, Algemene sfeer van het havengebied Rotterdam - SoundCloud - GvNL-Steim Workshop.ogg, CC BY 3.0, https://commons.wikimedia.org/wiki/File:Algemene_sfeer_van_het_havengebied_Rotterdam_-_SoundCloud_-_GvNL-Steim_Workshop.ogg. Changes: downloaded from Wikimedia Commons; no audio processing.",
+      "commercial_use": "allowed",
+      "share_alike": false,
+      "codec": "MP3",
+      "browser_compatible_preview": true,
+      "review_status": "preview_not_auditioned",
+      "release_ready": false,
+      "processing": "FFmpeg libmp3lame, 192 kbit/s CBR; metadata stripped; no normalization or fades.",
+      "media_info": {
+        "file": "rotterdam-harbour-ambience-candidate-01.mp3",
+        "bytes": 2304043,
+        "sha256": "8661ffe7ee1d4a17104364912db98184542cc6359aba014e5793316921c0684d",
+        "ffprobe": {
+          "programs": [],
+          "stream_groups": [],
+          "streams": [
+            {
+              "codec_name": "mp3",
+              "codec_type": "audio",
+              "sample_rate": "44100",
+              "channels": 2
+            }
+          ],
+          "format": {
+            "format_name": "mp3",
+            "duration": "95.973878"
+          }
+        }
+      }
+    },
+    {
+      "asset_id": "container-ship-arrival-candidate-01",
+      "file": "assets/browser-candidates/container-ship-arrival-candidate-01.mp3",
+      "source_file": "assets/candidates/Container_ship_arrival_harbour.ogg",
+      "source_sha256": "bab2fba773d38d04501992b76caaa2d855f129723b47992bde9e55cb581935e9",
+      "sha256": "d844c6b11e92d1694d7292ce9b4ebf2bd4bd0d9b481310d1e57762cafe7f29a6",
+      "license": "CC BY-SA 3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "attribution": "Klankbeeld / Beeld en Geluid, Containerschip meert aan in haven - SoundCloud - Beeld en Geluid.ogg, CC BY-SA 3.0, https://commons.wikimedia.org/wiki/File:Containerschip_meert_aan_in_haven_-_SoundCloud_-_Beeld_en_Geluid.ogg. Changes: downloaded from Wikimedia Commons; no audio processing.",
+      "commercial_use": "allowed",
+      "share_alike": true,
+      "codec": "MP3",
+      "browser_compatible_preview": true,
+      "review_status": "preview_not_auditioned",
+      "release_ready": false,
+      "processing": "FFmpeg libmp3lame, 192 kbit/s CBR; metadata stripped; no normalization or fades.",
+      "media_info": {
+        "file": "container-ship-arrival-candidate-01.mp3",
+        "bytes": 10330028,
+        "sha256": "d844c6b11e92d1694d7292ce9b4ebf2bd4bd0d9b481310d1e57762cafe7f29a6",
+        "ffprobe": {
+          "programs": [],
+          "stream_groups": [],
+          "streams": [
+            {
+              "codec_name": "mp3",
+              "codec_type": "audio",
+              "sample_rate": "48000",
+              "channels": 2
+            }
+          ],
+          "format": {
+            "format_name": "mp3",
+            "duration": "430.392000"
+          }
+        }
+      }
+    },
+    {
+      "asset_id": "dortmund-container-terminal-candidate-01",
+      "file": "assets/browser-candidates/dortmund-container-terminal-candidate-01.mp3",
+      "source_file": "assets/candidates/WWS_ContainerTerminalatthePortofDortmund.ogg",
+      "source_sha256": "e53c4509e8b7a452884fdfecb373f420811b1877053cbcb9460fe8aff6d60d84",
+      "sha256": "5bef2a630d4aa49497a06d0bce2dba56b4d3c2c6fbc0ba619d0c8829b4589a83",
+      "license": "CC BY 4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "attribution": "Konrad Gutkowski and Jonathan Nicolai / Work With Sounds, WWS ContainerTerminalatthePortofDortmund.ogg, CC BY 4.0, https://commons.wikimedia.org/wiki/File:WWS_ContainerTerminalatthePortofDortmund.ogg. Changes: downloaded from Wikimedia Commons; no audio processing.",
+      "commercial_use": "allowed",
+      "share_alike": false,
+      "codec": "MP3",
+      "browser_compatible_preview": true,
+      "review_status": "preview_not_auditioned",
+      "release_ready": false,
+      "processing": "FFmpeg libmp3lame, 192 kbit/s CBR; metadata stripped; no normalization or fades.",
+      "media_info": {
+        "file": "dortmund-container-terminal-candidate-01.mp3",
+        "bytes": 4551618,
+        "sha256": "5bef2a630d4aa49497a06d0bce2dba56b4d3c2c6fbc0ba619d0c8829b4589a83",
+        "ffprobe": {
+          "programs": [],
+          "stream_groups": [],
+          "streams": [
+            {
+              "codec_name": "mp3",
+              "codec_type": "audio",
+              "sample_rate": "44100",
+              "channels": 2
+            }
+          ],
+          "format": {
+            "format_name": "mp3",
+            "duration": "189.622857"
+          }
+        }
+      }
+    },
+    {
+      "asset_id": "container-reach-stacker-candidate-01",
+      "file": "assets/browser-candidates/container-reach-stacker-candidate-01.mp3",
+      "source_file": "assets/candidates/WWS_Containerreachstackers.ogg",
+      "source_sha256": "340f76f67082b3a1ae3dd621709b104736a3b0cb9e166f49da63641293527081",
+      "sha256": "e5d66b9f091d77b3159e8a227635ea3321337e7c39529b8d7922f369aea1f1d8",
+      "license": "CC BY 4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "attribution": "Teemu Ahola / Work With Sounds / Werstas, WWS Containerreachstackers.ogg, CC BY 4.0, https://commons.wikimedia.org/wiki/File:WWS_Containerreachstackers.ogg. Changes: downloaded from Wikimedia Commons; no audio processing.",
+      "commercial_use": "allowed",
+      "share_alike": false,
+      "codec": "MP3",
+      "browser_compatible_preview": true,
+      "review_status": "preview_not_auditioned",
+      "release_ready": false,
+      "processing": "FFmpeg libmp3lame, 192 kbit/s CBR; metadata stripped; no normalization or fades.",
+      "media_info": {
+        "file": "container-reach-stacker-candidate-01.mp3",
+        "bytes": 2187692,
+        "sha256": "e5d66b9f091d77b3159e8a227635ea3321337e7c39529b8d7922f369aea1f1d8",
+        "ffprobe": {
+          "programs": [],
+          "stream_groups": [],
+          "streams": [
+            {
+              "codec_name": "mp3",
+              "codec_type": "audio",
+              "sample_rate": "48000",
+              "channels": 2
+            }
+          ],
+          "format": {
+            "format_name": "mp3",
+            "duration": "91.128000"
+          }
+        }
+      }
+    }
+  ]
+}
