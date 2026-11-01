@@ -1,0 +1,385 @@
+{
+  "schema_version": 1,
+  "status": "preview_only_not_release_ready",
+  "source_manifest": "first-collection/manifest.json",
+  "assets": [
+    {
+      "asset_id": "crane-wws-bridge",
+      "file": "first-collection/browser-previews/crane-wws-bridge.mp3",
+      "source_file": "first-collection/audio/crane-wws-bridge.wav",
+      "source_sha256": "856b519b4f8e286a04a9b994cb84f806420116622d6a1bab95924eac5689a69f",
+      "sha256": "d792cd7603a4bd2e1fb651425615850d2b1a8a1dc8b1fb5e67a3c8b02d3ba388",
+      "codec": "MP3",
+      "browser_compatible_preview": true,
+      "release_ready": false,
+      "review_status": "preview_not_auditioned",
+      "processing": "FFmpeg libmp3lame, 192 kbit/s CBR; metadata stripped; no normalization or fades.",
+      "media_info": {
+        "codec": "mp3",
+        "sample_rate_hz": 48000,
+        "channels": 1,
+        "bits_per_sample": null,
+        "duration_seconds": 64.032,
+        "size_bytes": 1537388,
+        "bit_rate_bps": 192077
+      }
+    },
+    {
+      "asset_id": "crane-wws-containership",
+      "file": "first-collection/browser-previews/crane-wws-containership.mp3",
+      "source_file": "first-collection/audio/crane-wws-containership.wav",
+      "source_sha256": "691d7df7ed8d6b9cc6558ba4e0f6b95a944ca200c4ee19d8dd7a44700c2ad4e9",
+      "sha256": "baef3568d90d589a3b1e018c17c99b2987bb673aba78b336c6462074e30b58e2",
+      "codec": "MP3",
+      "browser_compatible_preview": true,
+      "release_ready": false,
+      "review_status": "preview_not_auditioned",
+      "processing": "FFmpeg libmp3lame, 192 kbit/s CBR; metadata stripped; no normalization or fades.",
+      "media_info": {
+        "codec": "mp3",
+        "sample_rate_hz": 48000,
+        "channels": 1,
+        "bits_per_sample": null,
+        "duration_seconds": 126.912,
+        "size_bytes": 3046508,
+        "bit_rate_bps": 192039
+      }
+    },
+    {
+      "asset_id": "vehicle-ursus-driving",
+      "file": "first-collection/browser-previews/vehicle-ursus-driving.mp3",
+      "source_file": "first-collection/audio/vehicle-ursus-driving.wav",
+      "source_sha256": "e68579e4a82cfda9f72f5d05d87ed960d543f3cccecf31b04258d7fdc8476d1a",
+      "sha256": "e4781fe08c495b4dac339241a69b2e11e3b645bceeaaa85e20222529d71110eb",
+      "codec": "MP3",
+      "browser_compatible_preview": true,
+      "release_ready": false,
+      "review_status": "preview_not_auditioned",
+      "processing": "FFmpeg libmp3lame, 192 kbit/s CBR; metadata stripped; no normalization or fades.",
+      "media_info": {
+        "codec": "mp3",
+        "sample_rate_hz": 48000,
+        "channels": 1,
+        "bits_per_sample": null,
+        "duration_seconds": 91.464,
+        "size_bytes": 2195756,
+        "bit_rate_bps": 192054
+      }
+    },
+    {
+      "asset_id": "harbour-wws-dortmund",
+      "file": "first-collection/browser-previews/harbour-wws-dortmund.mp3",
+      "source_file": "first-collection/audio/harbour-wws-dortmund.wav",
+      "source_sha256": "e9fe8106cfb695d33a366d09fd84c1f0851546f122ec078a28b3f502257ac87e",
+      "sha256": "11a92fce72de9d2e42649ec2d1970c792975890fd31111e282ce0ed621ab9980",
+      "codec": "MP3",
+      "browser_compatible_preview": true,
+      "release_ready": false,
+      "review_status": "preview_not_auditioned",
+      "processing": "FFmpeg libmp3lame, 192 kbit/s CBR; metadata stripped; no normalization or fades.",
+      "media_info": {
+        "codec": "mp3",
+        "sample_rate_hz": 48000,
+        "channels": 2,
+        "bits_per_sample": null,
+        "duration_seconds": 189.624,
+        "size_bytes": 4551596,
+        "bit_rate_bps": 192026
+      }
+    },
+    {
+      "asset_id": "warning-wws-nixe-whistle",
+      "file": "first-collection/browser-previews/warning-wws-nixe-whistle.mp3",
+      "source_file": "first-collection/audio/warning-wws-nixe-whistle.wav",
+      "source_sha256": "d71f1d9da7dc8df739d212045e03c418a75905eb1b356a665a53e51c42fc6426",
+      "sha256": "4622afd0e756626e1b0946198d085ef1b92957ec9afb8209be7ede4a20dc526d",
+      "codec": "MP3",
+      "browser_compatible_preview": true,
+      "release_ready": false,
+      "review_status": "preview_not_auditioned",
+      "processing": "FFmpeg libmp3lame, 192 kbit/s CBR; metadata stripped; no normalization or fades.",
+      "media_info": {
+        "codec": "mp3",
+        "sample_rate_hz": 48000,
+        "channels": 1,
+        "bits_per_sample": null,
+        "duration_seconds": 10.512,
+        "size_bytes": 252908,
+        "bit_rate_bps": 192471
+      }
+    },
+    {
+      "asset_id": "ship-wws-soldek-telegraph",
+      "file": "first-collection/browser-previews/ship-wws-soldek-telegraph.mp3",
+      "source_file": "first-collection/audio/ship-wws-soldek-telegraph.wav",
+      "source_sha256": "99bd488556da7d31609cdbdbb5e25464e51f676937dcd3fb08e62b4075924806",
+      "sha256": "ee7d25a3292cea05631227a32ce070c26e4ed7be8fc899e08675080ef509b694",
+      "codec": "MP3",
+      "browser_compatible_preview": true,
+      "release_ready": false,
+      "review_status": "preview_not_auditioned",
+      "processing": "FFmpeg libmp3lame, 192 kbit/s CBR; metadata stripped; no normalization or fades.",
+      "media_info": {
+        "codec": "mp3",
+        "sample_rate_hz": 48000,
+        "channels": 1,
+        "bits_per_sample": null,
+        "duration_seconds": 26.88,
+        "size_bytes": 645740,
+        "bit_rate_bps": 192184
+      }
+    },
+    {
+      "asset_id": "vehicle-ursus-c328-driving",
+      "file": "first-collection/browser-previews/vehicle-ursus-c328-driving.mp3",
+      "source_file": "first-collection/audio/vehicle-ursus-c328-driving.wav",
+      "source_sha256": "2f532c0e84cf556e030bc29d7867f6a37e2842c91abd7d3e0d311ad7dd2808b9",
+      "sha256": "c95ec731b6d069688904a3f7a8f1c63e11cb266508af516aaf6156ce6e443146",
+      "codec": "MP3",
+      "browser_compatible_preview": true,
+      "release_ready": false,
+      "review_status": "preview_not_auditioned",
+      "processing": "FFmpeg libmp3lame, 192 kbit/s CBR; metadata stripped; no normalization or fades.",
+      "media_info": {
+        "codec": "mp3",
+        "sample_rate_hz": 48000,
+        "channels": 1,
+        "bits_per_sample": null,
+        "duration_seconds": 34.104,
+        "size_bytes": 819116,
+        "bit_rate_bps": 192145
+      }
+    },
+    {
+      "asset_id": "vehicle-ursus-c328-engine",
+      "file": "first-collection/browser-previews/vehicle-ursus-c328-engine.mp3",
+      "source_file": "first-collection/audio/vehicle-ursus-c328-engine.wav",
+      "source_sha256": "feac5a114f81c4db986947f658dd81b571358e5ed701b1c587b807cee05fc33f",
+      "sha256": "3fd3ce389fba942c89aad19613cf84dbb9453547763b811dbf058884057b289d",
+      "codec": "MP3",
+      "browser_compatible_preview": true,
+      "release_ready": false,
+      "review_status": "preview_not_auditioned",
+      "processing": "FFmpeg libmp3lame, 192 kbit/s CBR; metadata stripped; no normalization or fades.",
+      "media_info": {
+        "codec": "mp3",
+        "sample_rate_hz": 48000,
+        "channels": 1,
+        "bits_per_sample": null,
+        "duration_seconds": 63.816,
+        "size_bytes": 1532204,
+        "bit_rate_bps": 192077
+      }
+    },
+    {
+      "asset_id": "vehicle-ursus-c342-engine",
+      "file": "first-collection/browser-previews/vehicle-ursus-c342-engine.mp3",
+      "source_file": "first-collection/audio/vehicle-ursus-c342-engine.wav",
+      "source_sha256": "0b2e9b02cce946e827e8969eb82ed4798e2df41b43d1a59738acc29bd93b5b60",
+      "sha256": "cf7adeb7489d44ce86cb79b1b11f1d0af607a4242a810cc0e04095fffb6d1742",
+      "codec": "MP3",
+      "browser_compatible_preview": true,
+      "release_ready": false,
+      "review_status": "preview_not_auditioned",
+      "processing": "FFmpeg libmp3lame, 192 kbit/s CBR; metadata stripped; no normalization or fades.",
+      "media_info": {
+        "codec": "mp3",
+        "sample_rate_hz": 48000,
+        "channels": 1,
+        "bits_per_sample": null,
+        "duration_seconds": 32.952,
+        "size_bytes": 791468,
+        "bit_rate_bps": 192150
+      }
+    },
+    {
+      "asset_id": "vehicle-lanz-hl12",
+      "file": "first-collection/browser-previews/vehicle-lanz-hl12.mp3",
+      "source_file": "first-collection/audio/vehicle-lanz-hl12.wav",
+      "source_sha256": "81913c25eadf46adc48f23349ebef2c3b0803ea7be56c0e4165720059708db12",
+      "sha256": "fc22b8afbde0270b3bedb45f7a4328f18e8b8e91adc0717b1dd4e9d242690ed3",
+      "codec": "MP3",
+      "browser_compatible_preview": true,
+      "release_ready": false,
+      "review_status": "preview_not_auditioned",
+      "processing": "FFmpeg libmp3lame, 192 kbit/s CBR; metadata stripped; no normalization or fades.",
+      "media_info": {
+        "codec": "mp3",
+        "sample_rate_hz": 48000,
+        "channels": 1,
+        "bits_per_sample": null,
+        "duration_seconds": 73.776,
+        "size_bytes": 1771244,
+        "bit_rate_bps": 192067
+      }
+    },
+    {
+      "asset_id": "crane-wws-mobile-harbour",
+      "file": "first-collection/browser-previews/crane-wws-mobile-harbour.mp3",
+      "source_file": "first-collection/audio/crane-wws-mobile-harbour.wav",
+      "source_sha256": "5d47948f21c64f4ba7a99aa1b35149ce642de38299d4cebfe52d2dfedb911da6",
+      "sha256": "70fc70de7fb7801a9445a266cd688558cbddbd278ce316efecb7cb5111c792bd",
+      "codec": "MP3",
+      "browser_compatible_preview": true,
+      "release_ready": false,
+      "review_status": "preview_not_auditioned",
+      "processing": "FFmpeg libmp3lame, 192 kbit/s CBR; metadata stripped; no normalization or fades.",
+      "media_info": {
+        "codec": "mp3",
+        "sample_rate_hz": 48000,
+        "channels": 1,
+        "bits_per_sample": null,
+        "duration_seconds": 48.576,
+        "size_bytes": 1166444,
+        "bit_rate_bps": 192102
+      }
+    },
+    {
+      "asset_id": "crane-wws-coal",
+      "file": "first-collection/browser-previews/crane-wws-coal.mp3",
+      "source_file": "first-collection/audio/crane-wws-coal.wav",
+      "source_sha256": "7cb250ca7ec2cb3193483c492375977a65fc5d52e1891d76ecb8e6d34f3d6938",
+      "sha256": "f9ac2b3a2ca1ee957b647b4d524ad2f43b51e764657572c8874c0eeff5439de8",
+      "codec": "MP3",
+      "browser_compatible_preview": true,
+      "release_ready": false,
+      "review_status": "preview_not_auditioned",
+      "processing": "FFmpeg libmp3lame, 192 kbit/s CBR; metadata stripped; no normalization or fades.",
+      "media_info": {
+        "codec": "mp3",
+        "sample_rate_hz": 48000,
+        "channels": 1,
+        "bits_per_sample": null,
+        "duration_seconds": 81.864,
+        "size_bytes": 1965356,
+        "bit_rate_bps": 192060
+      }
+    },
+    {
+      "asset_id": "industrial-wws-steel-scrap",
+      "file": "first-collection/browser-previews/industrial-wws-steel-scrap.mp3",
+      "source_file": "first-collection/audio/industrial-wws-steel-scrap.wav",
+      "source_sha256": "a1084dc43af30f442bc49c4e4d3ae7f12545e5d49e84df5532d372f1ebce76ab",
+      "sha256": "814ca4e08a605e9532a64261546ef69d0b481673388bf36b1517aaaaa4bedbcc",
+      "codec": "MP3",
+      "browser_compatible_preview": true,
+      "release_ready": false,
+      "review_status": "preview_not_auditioned",
+      "processing": "FFmpeg libmp3lame, 192 kbit/s CBR; metadata stripped; no normalization or fades.",
+      "media_info": {
+        "codec": "mp3",
+        "sample_rate_hz": 48000,
+        "channels": 1,
+        "bits_per_sample": null,
+        "duration_seconds": 56.952,
+        "size_bytes": 1367468,
+        "bit_rate_bps": 192087
+      }
+    },
+    {
+      "asset_id": "port-gdynia-lorries",
+      "file": "first-collection/browser-previews/port-gdynia-lorries.mp3",
+      "source_file": "first-collection/audio/port-gdynia-lorries.wav",
+      "source_sha256": "5d056dce58807ccd0daf4925bf59d9129adc51b34a1705fd461052ee5ced0ce4",
+      "sha256": "71e08200495d15229e23bac014e7d80ebacdabec1b4de53a723680315121cd09",
+      "codec": "MP3",
+      "browser_compatible_preview": true,
+      "release_ready": false,
+      "review_status": "preview_not_auditioned",
+      "processing": "FFmpeg libmp3lame, 192 kbit/s CBR; metadata stripped; no normalization or fades.",
+      "media_info": {
+        "codec": "mp3",
+        "sample_rate_hz": 48000,
+        "channels": 2,
+        "bits_per_sample": null,
+        "duration_seconds": 70.104,
+        "size_bytes": 1683116,
+        "bit_rate_bps": 192070
+      }
+    },
+    {
+      "asset_id": "port-gdansk-coal",
+      "file": "first-collection/browser-previews/port-gdansk-coal.mp3",
+      "source_file": "first-collection/audio/port-gdansk-coal.wav",
+      "source_sha256": "3573e2dfc45fcdc585667c02dcd192a3bdceb3adf32b65bb3b693042a657afca",
+      "sha256": "ff70c34f572b37736bd19bb07409135c97f7744fc0a31fd715f936f56f137f2c",
+      "codec": "MP3",
+      "browser_compatible_preview": true,
+      "release_ready": false,
+      "review_status": "preview_not_auditioned",
+      "processing": "FFmpeg libmp3lame, 192 kbit/s CBR; metadata stripped; no normalization or fades.",
+      "media_info": {
+        "codec": "mp3",
+        "sample_rate_hz": 48000,
+        "channels": 2,
+        "bits_per_sample": null,
+        "duration_seconds": 66.96,
+        "size_bytes": 1607660,
+        "bit_rate_bps": 192074
+      }
+    },
+    {
+      "asset_id": "port-gdansk-scrap",
+      "file": "first-collection/browser-previews/port-gdansk-scrap.mp3",
+      "source_file": "first-collection/audio/port-gdansk-scrap.wav",
+      "source_sha256": "0c115d91c0c4d3da4b93f66ca908263e60f06c76f0f6b3a8eff387a35a64becd",
+      "sha256": "7cc2ea5187192b3df15a41242e25d8ff2e8afbdd845dbbf3b6903dcc1f0add67",
+      "codec": "MP3",
+      "browser_compatible_preview": true,
+      "release_ready": false,
+      "review_status": "preview_not_auditioned",
+      "processing": "FFmpeg libmp3lame, 192 kbit/s CBR; metadata stripped; no normalization or fades.",
+      "media_info": {
+        "codec": "mp3",
+        "sample_rate_hz": 48000,
+        "channels": 2,
+        "bits_per_sample": null,
+        "duration_seconds": 98.52,
+        "size_bytes": 2365100,
+        "bit_rate_bps": 192050
+      }
+    },
+    {
+      "asset_id": "crane-soc-waste-cabin",
+      "file": "first-collection/browser-previews/crane-soc-waste-cabin.mp3",
+      "source_file": "first-collection/audio/crane-soc-waste-cabin.wav",
+      "source_sha256": "332e17455c073e9ca22d23be60d06dbdd7287a63bc90c22e79dd850344f3008e",
+      "sha256": "2c1a4c93803fad08340ea15aa2a1823f7e4c77e7d0a4b08879cf955a4d4d9f08",
+      "codec": "MP3",
+      "browser_compatible_preview": true,
+      "release_ready": false,
+      "review_status": "preview_not_auditioned",
+      "processing": "FFmpeg libmp3lame, 192 kbit/s CBR; metadata stripped; no normalization or fades.",
+      "media_info": {
+        "codec": "mp3",
+        "sample_rate_hz": 48000,
+        "channels": 1,
+        "bits_per_sample": null,
+        "duration_seconds": 68.28,
+        "size_bytes": 1639340,
+        "bit_rate_bps": 192072
+      }
+    },
+    {
+      "asset_id": "crane-soc-shipyard",
+      "file": "first-collection/browser-previews/crane-soc-shipyard.mp3",
+      "source_file": "first-collection/audio/crane-soc-shipyard.wav",
+      "source_sha256": "e6aa8c9b0f935a277d9de45a56050ce39ef144111645ed2750c8225de39430e2",
+      "sha256": "e38079e47611db88096134028a8cbd6b2dccb584e31f7ec7cb62b2f99e35e19a",
+      "codec": "MP3",
+      "browser_compatible_preview": true,
+      "release_ready": false,
+      "review_status": "preview_not_auditioned",
+      "processing": "FFmpeg libmp3lame, 192 kbit/s CBR; metadata stripped; no normalization or fades.",
+      "media_info": {
+        "codec": "mp3",
+        "sample_rate_hz": 48000,
+        "channels": 1,
+        "bits_per_sample": null,
+        "duration_seconds": 183.192,
+        "size_bytes": 4397228,
+        "bit_rate_bps": 192027
+      }
+    }
+  ]
+}
