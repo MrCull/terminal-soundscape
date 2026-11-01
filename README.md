@@ -32,3 +32,8 @@ Each accepted entry needs item-level evidence that redistribution is permitted, 
 See [docs/collection-status.md](docs/collection-status.md) for current inventory and gaps, and [docs/research-log.md](docs/research-log.md) for source decisions and operating-context research.
 
 Generated reports currently live in [`docs/generated/`](docs/generated/): catalogue, attribution, coverage, and provisional candidate mapping. Rebuild catalogue with the `catalogue` command; rebuild the other reports with `reports`.
+
+
+## First collection WAV set
+
+The separately maintained first collection from the `integration/first-collection` branch is also included. It contains 18 WAV recordings and uses its own metadata format in [`manifest.first-collection.json`](manifest.first-collection.json), with its original workflow documented in [`docs/first-collection-README.md`](docs/first-collection-README.md). Run its standalone commands with `python soundscape.py validate` or `python soundscape.py catalogue`; this keeps its 48 kHz WAV masters and generated reports separate from the current Ogg candidate inventory.
