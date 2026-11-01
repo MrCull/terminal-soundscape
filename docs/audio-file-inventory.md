@@ -165,3 +165,10 @@ Generated from the two manifests and FFprobe. Descriptions are based on source-p
 ## Processing details
 
 For the 18 first-collection previews, FFmpeg encoded each WAV master to MP3 using `libmp3lame` at 192 kbit/s CBR, stripped metadata, and applied no normalization, fades, trimming, or other signal edits. The original WAVs were kept unchanged. `first-collection/browser-previews/preview-manifest.json` records each master/output path, source and output SHA-256, probe information, and conversion settings. The previews total approximately 33.3 MB compared with 174.0 MB for the WAV masters (about 80.8% smaller).
+
+## Technical verification
+
+- The current collection validator passed all 106 manifest entries with zero errors, including source paths, hashes, media properties, and FFmpeg decode/signal checks.
+- The first-collection validator passed all 18 WAV manifest entries, including source hashes and PCM audio checks.
+- All 24 MP3 previews passed SHA-256 comparison against their manifests and decoded fully with FFmpeg (18 new previews and six existing previews).
+- These are automated integrity checks only. No recording has been marked auditioned, and they do not establish acoustic quality, event identity, suitability, or loop boundaries.
