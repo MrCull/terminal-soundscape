@@ -322,7 +322,6 @@ function buildCard(item) {
       reviews[item.key] = result.review;
       savedLabel.textContent = `Saved to repo ${result.review.saved_at}`;
       save.textContent = "Update saved review";
-      activeTab = "saved";
       updateTabs();
       applyFilters();
     } catch (error) {
