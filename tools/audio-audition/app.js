@@ -28,6 +28,16 @@ function option(value, label) {
   return item;
 }
 
+function formatTime(seconds) {
+  if (!Number.isFinite(seconds) || seconds < 0) return "0:00";
+  const total = Math.floor(seconds);
+  const hours = Math.floor(total / 3600);
+  const minutes = Math.floor((total % 3600) / 60);
+  const remainder = total % 60;
+  return hours ? `${hours}:${String(minutes).padStart(2, "0")}:${String(remainder).padStart(2, "0")}`
+    : `${minutes}:${String(remainder).padStart(2, "0")}`;
+}
+
 async function load() {
   try {
     const [currentResponse, firstResponse, previewResponse, tagsResponse] = await Promise.all([
@@ -54,6 +64,7 @@ async function load() {
         title: asset.title || asset.id,
         description: asset.event_guidance || "No source description is recorded.",
         category: asset.category || "uncategorized",
+        durationSeconds: Number(asset.duration_seconds) || 0,
         source: asset.file,
         previews: (asset.derivatives || []).map(item => item.file),
         analysis: tagsByFile.get(asset.file),
@@ -67,6 +78,7 @@ async function load() {
         title: asset.description || asset.id,
         description: asset.playback_guidance || "No additional playback guidance is recorded.",
         category: asset.priority_category || asset.event || "uncategorized",
+        durationSeconds: Number(asset.audio?.duration_seconds) || 0,
         source: `first-collection/${asset.path}`,
         previews: firstPreviewById.has(asset.id) ? [firstPreviewById.get(asset.id)] : [],
         analysis: tagsByFile.get(`first-collection/${asset.path}`),
@@ -77,7 +89,7 @@ async function load() {
   } catch (error) {
     summary.textContent = "Could not load the audio inventory.";
     errorBox.textContent = `${error.message} Run ` +
-      "python -m http.server 8000 from the repository root, then open " +
+      "python tools/audio-audition/serve.py from the repository root, then open " +
       "http://localhost:8000/tools/audio-audition/.";
   }
 }
@@ -117,7 +129,7 @@ function buildCard(item) {
   const playerRow = node("div", undefined, "player");
   const player = document.createElement("audio");
   player.controls = true;
-  player.preload = "none";
+  player.preload = "metadata";
   player.src = `/${item.source}`;
   playerRow.append(player);
   if (item.previews.length) {
@@ -132,6 +144,47 @@ function buildCard(item) {
     playerRow.append(select);
   }
   card.append(playerRow);
+
+  const timeline = node("div", undefined, "timeline");
+  const back = node("button", "−10s");
+  back.type = "button";
+  back.setAttribute("aria-label", "Rewind 10 seconds");
+  const range = document.createElement("input");
+  range.type = "range";
+  range.min = "0";
+  range.max = String(item.durationSeconds || 0);
+  range.step = "0.1";
+  range.value = "0";
+  range.disabled = !item.durationSeconds;
+  range.setAttribute("aria-label", "Seek through the full recording");
+  const forward = node("button", "+10s");
+  forward.type = "button";
+  forward.setAttribute("aria-label", "Forward 10 seconds");
+  const time = node("span", `0:00 / ${formatTime(item.durationSeconds)}`, "time-readout");
+  const seekTo = seconds => {
+    const duration = Number.isFinite(player.duration) ? player.duration : item.durationSeconds;
+    player.currentTime = Math.max(0, Math.min(duration || 0, seconds));
+  };
+  back.addEventListener("click", () => seekTo((player.currentTime || 0) - 10));
+  forward.addEventListener("click", () => seekTo((player.currentTime || 0) + 10));
+  range.addEventListener("input", () => {
+    time.textContent = `${formatTime(Number(range.value))} / ${formatTime(item.durationSeconds)}`;
+  });
+  range.addEventListener("change", () => seekTo(Number(range.value)));
+  const updateTimeline = () => {
+    const duration = Number.isFinite(player.duration) ? player.duration : item.durationSeconds;
+    if (duration) {
+      range.max = String(duration);
+      range.disabled = false;
+    }
+    if (document.activeElement !== range) range.value = String(player.currentTime || 0);
+    time.textContent = `${formatTime(player.currentTime || 0)} / ${formatTime(duration)}`;
+  };
+  player.addEventListener("timeupdate", updateTimeline);
+  player.addEventListener("loadedmetadata", updateTimeline);
+  player.addEventListener("durationchange", updateTimeline);
+  timeline.append(back, range, forward, time);
+  card.append(timeline);
 
   if (item.analysis) {
     const tags = item.analysis.top_tags_by_mean_score.slice(0, 5)
