@@ -1,18 +1,20 @@
-const STORAGE_KEY = "terminal-soundscape-audio-review-v1";
+const REVIEWER_KEY = "terminal-soundscape-reviewer-v1";
 const list = document.querySelector("#recordings");
 const summary = document.querySelector("#summary");
 const errorBox = document.querySelector("#error");
 const searchBox = document.querySelector("#search");
 const collectionBox = document.querySelector("#collection");
-const stateBox = document.querySelector("#state");
+const reviewerBox = document.querySelector("#reviewer");
+const queueTab = document.querySelector("#tab-queue");
+const savedTab = document.querySelector("#tab-saved");
+const queueCount = document.querySelector("#queue-count");
+const savedCount = document.querySelector("#saved-count");
 
 let recordings = [];
-let reviews = readReviews();
-
-function readReviews() {
-  try { return JSON.parse(localStorage.getItem(STORAGE_KEY) || "{}"); }
-  catch { return {}; }
-}
+let reviews = {};
+let activeTab = "queue";
+reviewerBox.value = localStorage.getItem(REVIEWER_KEY) || "";
+reviewerBox.addEventListener("input", () => localStorage.setItem(REVIEWER_KEY, reviewerBox.value));
 
 function node(tag, text, className) {
   const element = document.createElement(tag);
@@ -40,19 +42,25 @@ function formatTime(seconds) {
 
 async function load() {
   try {
-    const [currentResponse, firstResponse, previewResponse, tagsResponse] = await Promise.all([
+    const [currentResponse, firstResponse, previewResponse, tagsResponse, reviewsResponse] = await Promise.all([
       fetch("/manifest.json"),
       fetch("/first-collection/manifest.json"),
       fetch("/first-collection/browser-previews/preview-manifest.json"),
-      fetch("/docs/generated/audio-event-tags.json")
+      fetch("/docs/generated/audio-event-tags.json"),
+      fetch("/api/reviews")
     ]);
-    if (![currentResponse, firstResponse, previewResponse].every(response => response.ok)) {
-      throw new Error("Could not read the repository manifests. Start the server from the repository root.");
+    if (![currentResponse, firstResponse, previewResponse, reviewsResponse].every(response => response.ok)) {
+      throw new Error("Could not read the repository files. Start the audition server from the repository root.");
     }
-    const [current, first, firstPreviews, tagReport] = await Promise.all([
+    const [current, first, firstPreviews, tagReport, savedReviews] = await Promise.all([
       currentResponse.json(), firstResponse.json(), previewResponse.json(),
-      tagsResponse.ok ? tagsResponse.json() : Promise.resolve({ assets: [] })
+      tagsResponse.ok ? tagsResponse.json() : Promise.resolve({ assets: [] }),
+      reviewsResponse.json()
     ]);
+    reviews = Object.fromEntries((savedReviews.reviews || []).map(review => [
+      `${review.collection === "first-collection" ? "first" : "current"}:${review.id}`,
+      review
+    ]));
     const firstPreviewById = new Map(firstPreviews.assets.map(item => [item.asset_id, item.file]));
     const tagsByFile = new Map(tagReport.assets.map(item => [item.file, item.analysis]));
     recordings = [
@@ -129,7 +137,7 @@ function buildCard(item) {
   const playerRow = node("div", undefined, "player");
   const player = document.createElement("audio");
   player.controls = true;
-  player.preload = "metadata";
+  player.preload = "none";
   player.src = `/${item.source}`;
   playerRow.append(player);
   if (item.previews.length) {
@@ -162,8 +170,17 @@ function buildCard(item) {
   forward.setAttribute("aria-label", "Forward 10 seconds");
   const time = node("span", `0:00 / ${formatTime(item.durationSeconds)}`, "time-readout");
   const seekTo = seconds => {
-    const duration = Number.isFinite(player.duration) ? player.duration : item.durationSeconds;
-    player.currentTime = Math.max(0, Math.min(duration || 0, seconds));
+    const setPosition = () => {
+      const duration = Number.isFinite(player.duration) ? player.duration : item.durationSeconds;
+      player.currentTime = Math.max(0, Math.min(duration || 0, seconds));
+    };
+    if (player.readyState === 0) {
+      player.addEventListener("loadedmetadata", setPosition, { once: true });
+      player.preload = "metadata";
+      player.load();
+    } else {
+      setPosition();
+    }
   };
   back.addEventListener("click", () => seekTo((player.currentTime || 0) - 10));
   forward.addEventListener("click", () => seekTo((player.currentTime || 0) + 10));
@@ -195,70 +212,124 @@ function buildCard(item) {
       const seek = node("button", `${window.start_seconds.toFixed(0)}s · ${window.label} ${window.score.toFixed(2)}`);
       seek.type = "button";
       seek.title = "Seek the player to this classifier-highlighted time; it will not start playback.";
-      seek.addEventListener("click", () => {
-        const setPosition = () => { player.currentTime = window.start_seconds; };
-        if (player.readyState === 0) player.addEventListener("loadedmetadata", setPosition, { once: true });
-        else setPosition();
-      });
+      seek.addEventListener("click", () => seekTo(window.start_seconds));
       windows.append(seek);
     }
     card.append(windows);
   }
 
   const fields = node("div", undefined, "fields");
-  const disposition = makeField("Your assessment", "select", saved.disposition, "", [
-    ["undecided", "Undecided"],
-    ["usable_authentic", "Potentially usable, authentic"],
-    ["usable_substitute", "Potentially usable, substitute"],
-    ["needs_edit", "Potentially useful segment; edit needed"],
-    ["not_suitable", "Not suitable"],
-    ["unusable", "Unusable or corrupt"]
-  ]);
-  fields.append(disposition.label);
-  const loop = makeField("Loop boundary", "select", saved.loop_boundary, "", [
-    ["not_reviewed", "Not checked"],
-    ["not_applicable", "Not intended as a loop"],
-    ["good", "Boundary sounds suitable"],
-    ["bad", "Boundary needs an edit"]
-  ]);
-  fields.append(loop.label);
-  const start = makeField("Useful segment start (seconds)", "number", saved.segment_start_seconds, "");
-  fields.append(start.label);
-  const end = makeField("Useful segment end (seconds)", "number", saved.segment_end_seconds, "");
-  fields.append(end.label);
-  const content = makeField("What you hear", "textarea", saved.content_notes, "wide");
-  fields.append(content.label);
-  const quality = makeField("Noise, clipping, or other quality issues", "textarea", saved.quality_notes, "wide");
-  fields.append(quality.label);
-  const additional = makeField("Other notes", "textarea", saved.additional_notes, "wide");
-  fields.append(additional.label);
-  const reviewer = makeField("Reviewer name", "text", saved.reviewer, "");
-  fields.append(reviewer.label);
+  let rating = Number(saved.rating) || 0;
+  const ratingField = node("div", undefined, "review-input");
+  ratingField.append(node("span", "Quick rating"));
+  const stars = node("div", undefined, "stars");
+  const starButtons = [];
+  const showRating = () => starButtons.forEach((button, index) => {
+    button.classList.toggle("selected", index < rating);
+    button.setAttribute("aria-pressed", String(index + 1 === rating));
+  });
+  for (let value = 1; value <= 5; value++) {
+    const button = node("button", "★");
+    button.type = "button";
+    button.setAttribute("aria-label", `${value} out of 5 stars`);
+    button.addEventListener("click", () => { rating = value; showRating(); });
+    starButtons.push(button);
+    stars.append(button);
+  }
+  ratingField.append(stars);
+  showRating();
+  fields.append(ratingField);
+
+  const availableTags = ["crane", "container handling", "vehicle", "engine", "ship", "alarm / whistle", "water / waves", "birds", "speech", "machinery", "ambience", "useful event", "loop candidate", "poor quality"];
+  const selectedTags = new Set(saved.tags || []);
+  const tagField = node("fieldset", undefined, "tag-field");
+  tagField.append(node("legend", "Tags (optional)"));
+  const tagOptions = node("div", undefined, "tag-options");
+  for (const tag of availableTags) {
+    const label = node("label", undefined, "tag-option");
+    const checkbox = document.createElement("input");
+    checkbox.type = "checkbox";
+    checkbox.value = tag;
+    checkbox.checked = selectedTags.has(tag);
+    checkbox.addEventListener("change", () => checkbox.checked ? selectedTags.add(tag) : selectedTags.delete(tag));
+    label.append(checkbox, node("span", tag));
+    tagOptions.append(label);
+  }
+  tagField.append(tagOptions);
+  fields.append(tagField);
+
+  let startMarker = saved.start_seconds ?? null;
+  let endMarker = saved.end_seconds ?? null;
+  const markerField = node("div", undefined, "marker-field wide");
+  markerField.append(node("span", "Cut / loop reference markers"));
+  const markerControls = node("div", undefined, "marker-controls");
+  const startButton = node("button", "Mark start at playhead");
+  startButton.type = "button";
+  const endButton = node("button", "Mark end at playhead");
+  endButton.type = "button";
+  const clearMarkers = node("button", "Clear markers");
+  clearMarkers.type = "button";
+  const markerReadout = node("span", "No markers set", "marker-readout");
+  const showMarkers = () => {
+    markerReadout.textContent = `Start: ${startMarker === null ? "—" : `${startMarker.toFixed(1)}s`} · End: ${endMarker === null ? "—" : `${endMarker.toFixed(1)}s`}`;
+  };
+  startButton.addEventListener("click", () => { startMarker = Number((player.currentTime || 0).toFixed(1)); showMarkers(); });
+  endButton.addEventListener("click", () => { endMarker = Number((player.currentTime || 0).toFixed(1)); showMarkers(); });
+  clearMarkers.addEventListener("click", () => { startMarker = null; endMarker = null; showMarkers(); });
+  markerControls.append(startButton, endButton, clearMarkers, markerReadout);
+  markerField.append(markerControls);
+  fields.append(markerField);
+  showMarkers();
+
+  const notes = makeField("Optional note", "textarea", saved.notes, "wide");
+  fields.append(notes.label);
   card.append(fields);
 
   const footer = node("div", undefined, "card-footer");
-  const save = node("button", "Save notes");
+  const save = node("button", saved.saved_at ? "Update saved review" : "Save to repo");
   save.type = "button";
-  const savedLabel = node("span", saved.reviewed_at ? `Saved ${saved.reviewed_at}` : "Not saved", "saved");
-  save.addEventListener("click", () => {
-    const note = {
+  const savedLabel = node("span", saved.saved_at ? `Saved to repo ${saved.saved_at}` : "Not saved", "saved");
+  save.addEventListener("click", async () => {
+    if (!rating) {
+      savedLabel.textContent = "Choose a star rating first.";
+      return;
+    }
+    if (startMarker !== null && endMarker !== null && endMarker <= startMarker) {
+      savedLabel.textContent = "End marker must come after the start marker.";
+      return;
+    }
+    const review = {
       id: item.id,
-      collection: item.collection,
+      collection: item.collection === "first" ? "first-collection" : "current",
       source_file: item.source,
-      disposition: disposition.control.value,
-      loop_boundary: loop.control.value,
-      segment_start_seconds: start.control.value === "" ? null : Number(start.control.value),
-      segment_end_seconds: end.control.value === "" ? null : Number(end.control.value),
-      content_notes: content.control.value.trim(),
-      quality_notes: quality.control.value.trim(),
-      additional_notes: additional.control.value.trim(),
-      reviewer: reviewer.control.value.trim(),
-      reviewed_at: new Date().toISOString()
+      rating,
+      tags: [...selectedTags],
+      start_seconds: startMarker,
+      end_seconds: endMarker,
+      notes: notes.control.value.trim(),
+      reviewer: reviewerBox.value.trim()
     };
-    reviews[item.key] = note;
-    localStorage.setItem(STORAGE_KEY, JSON.stringify(reviews));
-    savedLabel.textContent = `Saved ${note.reviewed_at}`;
-    applyFilters();
+    save.disabled = true;
+    savedLabel.textContent = "Saving to docs/listening-reviews.json…";
+    try {
+      const response = await fetch("/api/reviews", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ review })
+      });
+      const result = await response.json();
+      if (!response.ok) throw new Error(result.error || "Save failed");
+      reviews[item.key] = result.review;
+      savedLabel.textContent = `Saved to repo ${result.review.saved_at}`;
+      save.textContent = "Update saved review";
+      activeTab = "saved";
+      updateTabs();
+      applyFilters();
+    } catch (error) {
+      savedLabel.textContent = `Not saved: ${error.message}`;
+    } finally {
+      save.disabled = false;
+    }
   });
   footer.append(save, savedLabel);
   card.append(footer);
@@ -267,26 +338,34 @@ function buildCard(item) {
 
 function render() {
   list.replaceChildren(...recordings.map(buildCard));
+  updateTabs();
   applyFilters();
+}
+
+function updateTabs() {
+  const saved = recordings.filter(item => reviews[item.key]?.saved_at).length;
+  queueCount.textContent = recordings.length - saved;
+  savedCount.textContent = saved;
+  queueTab.setAttribute("aria-selected", String(activeTab === "queue"));
+  savedTab.setAttribute("aria-selected", String(activeTab === "saved"));
 }
 
 function applyFilters() {
   const query = searchBox.value.trim().toLowerCase();
   const collection = collectionBox.value;
-  const state = stateBox.value;
   let shown = 0;
   for (const card of list.children) {
     const item = recordings.find(entry => entry.key === card.dataset.key);
     const text = `${item.title} ${item.id} ${item.category} ${item.description} ${item.source}`.toLowerCase();
-    const isReviewed = Boolean(reviews[item.key]?.reviewed_at);
+    const isSaved = Boolean(reviews[item.key]?.saved_at);
     const visible = (!query || text.includes(query)) &&
       (collection === "all" || collection === item.collection) &&
-      (state === "all" || (state === "notes") === isReviewed);
+      (activeTab === "saved" ? isSaved : !isSaved);
     card.hidden = !visible;
     if (visible) shown++;
   }
-  const reviewed = recordings.filter(item => reviews[item.key]?.reviewed_at).length;
-  summary.textContent = `${shown} shown · ${recordings.length} recordings · ${reviewed} have saved notes in this browser`;
+  const saved = recordings.filter(item => reviews[item.key]?.saved_at).length;
+  summary.textContent = `${shown} shown · ${recordings.length - saved} to review · ${saved} saved in the repo`;
 }
 
 document.querySelector("#export").addEventListener("click", () => {
@@ -307,5 +386,6 @@ document.querySelector("#export").addEventListener("click", () => {
 
 searchBox.addEventListener("input", applyFilters);
 collectionBox.addEventListener("change", applyFilters);
-stateBox.addEventListener("change", applyFilters);
+queueTab.addEventListener("click", () => { activeTab = "queue"; updateTabs(); applyFilters(); });
+savedTab.addEventListener("click", () => { activeTab = "saved"; updateTabs(); applyFilters(); });
 load();
